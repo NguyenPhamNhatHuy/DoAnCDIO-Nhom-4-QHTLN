@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|d:\\file c\u00E1c m\u00F4n h\u1ECDc\\\u0111\u1ED3 \u00E1n cdio2\\nhom4doan-hethongquanlycuahangtaphoa\\nhom4doan-hethongquanlycuahangtaphoa\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|solutionrelative:nhom4doan-hethongquanlycuahangtaphoa\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmDangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\frmDangNhap.cs",
+              "ToolTip": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\frmDangNhap.cs [Design]",
+              "RelativeToolTip": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\frmDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T06:43:38.671Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
