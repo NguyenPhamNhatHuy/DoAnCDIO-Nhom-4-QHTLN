@@ -21,3 +21,7 @@ D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nho
 D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoA.05DA34D3.Up2Date
 D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.exe
 D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.pdb
+D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.dll
+D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.SqlServer.dll
+D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.xml
+D:\File Các Môn Học\Đồ Án CDIO2\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.SqlServer.xml

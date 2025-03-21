@@ -89,7 +89,7 @@
             this.btnClear_QLNCC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClear_QLNCC.ForeColor = System.Drawing.Color.White;
             this.btnClear_QLNCC.Image = ((System.Drawing.Image)(resources.GetObject("btnClear_QLNCC.Image")));
-            this.btnClear_QLNCC.Location = new System.Drawing.Point(1076, 175);
+            this.btnClear_QLNCC.Location = new System.Drawing.Point(1080, 126);
             this.btnClear_QLNCC.Name = "btnClear_QLNCC";
             this.btnClear_QLNCC.Size = new System.Drawing.Size(50, 43);
             this.btnClear_QLNCC.TabIndex = 133;
@@ -107,13 +107,14 @@
             this.btnLoading_QLNCC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLoading_QLNCC.ForeColor = System.Drawing.Color.White;
             this.btnLoading_QLNCC.Image = ((System.Drawing.Image)(resources.GetObject("btnLoading_QLNCC.Image")));
-            this.btnLoading_QLNCC.Location = new System.Drawing.Point(952, 176);
+            this.btnLoading_QLNCC.Location = new System.Drawing.Point(956, 127);
             this.btnLoading_QLNCC.Name = "btnLoading_QLNCC";
             this.btnLoading_QLNCC.Size = new System.Drawing.Size(50, 42);
             this.btnLoading_QLNCC.TabIndex = 132;
             // 
             // btnTimKiem_QLNCC
             // 
+            this.btnTimKiem_QLNCC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTimKiem_QLNCC.BorderRadius = 15;
             this.btnTimKiem_QLNCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTimKiem_QLNCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -123,13 +124,14 @@
             this.btnTimKiem_QLNCC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTimKiem_QLNCC.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem_QLNCC.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem_QLNCC.Image")));
-            this.btnTimKiem_QLNCC.Location = new System.Drawing.Point(808, 177);
+            this.btnTimKiem_QLNCC.Location = new System.Drawing.Point(812, 128);
             this.btnTimKiem_QLNCC.Name = "btnTimKiem_QLNCC";
             this.btnTimKiem_QLNCC.Size = new System.Drawing.Size(51, 41);
             this.btnTimKiem_QLNCC.TabIndex = 33;
             // 
             // cboDiaChi_QLNCC
             // 
+            this.cboDiaChi_QLNCC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cboDiaChi_QLNCC.BackColor = System.Drawing.Color.Transparent;
             this.cboDiaChi_QLNCC.BorderRadius = 15;
             this.cboDiaChi_QLNCC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
@@ -139,13 +141,14 @@
             this.cboDiaChi_QLNCC.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDiaChi_QLNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboDiaChi_QLNCC.ItemHeight = 30;
-            this.cboDiaChi_QLNCC.Location = new System.Drawing.Point(808, 84);
+            this.cboDiaChi_QLNCC.Location = new System.Drawing.Point(812, 177);
             this.cboDiaChi_QLNCC.Name = "cboDiaChi_QLNCC";
             this.cboDiaChi_QLNCC.Size = new System.Drawing.Size(318, 36);
             this.cboDiaChi_QLNCC.TabIndex = 34;
             // 
             // txtTimKiem_QLNCC
             // 
+            this.txtTimKiem_QLNCC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTimKiem_QLNCC.BorderRadius = 15;
             this.txtTimKiem_QLNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimKiem_QLNCC.DefaultText = "";
@@ -156,7 +159,7 @@
             this.txtTimKiem_QLNCC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTimKiem_QLNCC.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem_QLNCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKiem_QLNCC.Location = new System.Drawing.Point(808, 128);
+            this.txtTimKiem_QLNCC.Location = new System.Drawing.Point(812, 79);
             this.txtTimKiem_QLNCC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTimKiem_QLNCC.Name = "txtTimKiem_QLNCC";
             this.txtTimKiem_QLNCC.PlaceholderText = "Tìm Kiếm Nhà Cung Cấp";
@@ -166,6 +169,7 @@
             // 
             // txtDiaChi_QLNCC
             // 
+            this.txtDiaChi_QLNCC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDiaChi_QLNCC.BorderRadius = 15;
             this.txtDiaChi_QLNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiaChi_QLNCC.DefaultText = "";
@@ -186,6 +190,7 @@
             // 
             // txtTenNhaCungCap_QLNCC
             // 
+            this.txtTenNhaCungCap_QLNCC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTenNhaCungCap_QLNCC.BorderRadius = 15;
             this.txtTenNhaCungCap_QLNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenNhaCungCap_QLNCC.DefaultText = "";
@@ -206,6 +211,7 @@
             // 
             // txtMaNhaCungCap_QLNCC
             // 
+            this.txtMaNhaCungCap_QLNCC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaNhaCungCap_QLNCC.BorderRadius = 15;
             this.txtMaNhaCungCap_QLNCC.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaNhaCungCap_QLNCC.DefaultText = "";
@@ -226,6 +232,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(128, 193);
@@ -236,6 +243,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(128, 144);
@@ -246,6 +254,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(128, 95);

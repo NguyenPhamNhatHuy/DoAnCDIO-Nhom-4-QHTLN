@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|d:\\file c\u00E1c m\u00F4n h\u1ECDc\\\u0111\u1ED3 \u00E1n cdio2\\nhom4doan-hethongquanlycuahangtaphoa\\nhom4doan-hethongquanlycuahangtaphoa\\quanly\\frmquanlydanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|solutionrelative:nhom4doan-hethongquanlycuahangtaphoa\\quanly\\frmquanlydanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|d:\\file c\u00E1c m\u00F4n h\u1ECDc\\\u0111\u1ED3 \u00E1n cdio2\\nhom4doan-hethongquanlycuahangtaphoa\\nhom4doan-hethongquanlycuahangtaphoa\\quanly\\frmquanlydanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|solutionrelative:nhom4doan-hethongquanlycuahangtaphoa\\quanly\\frmquanlydanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +39,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmQuanLyDanhMuc.cs",
+              "DocumentMoniker": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs",
+              "RelativeDocumentMoniker": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs",
+              "ToolTip": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs",
+              "RelativeToolTip": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:09:46.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmQuanLyDanhMuc.cs [Design]",
+              "DocumentMoniker": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs",
+              "RelativeDocumentMoniker": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs",
+              "ToolTip": "D:\\File C\u00E1c M\u00F4n H\u1ECDc\\\u0110\u1ED3 \u00C1n CDIO2\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs [Design]",
+              "RelativeToolTip": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\QuanLy\\frmQuanLyDanhMuc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T12:08:14.698Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

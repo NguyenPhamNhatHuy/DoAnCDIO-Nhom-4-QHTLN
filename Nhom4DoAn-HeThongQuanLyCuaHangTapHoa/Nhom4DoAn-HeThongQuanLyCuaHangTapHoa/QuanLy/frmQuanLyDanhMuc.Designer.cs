@@ -39,7 +39,6 @@
             this.btnThem_QLDM = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClear_QLDM = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLoading_QLDM = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTenDanhMuc_QLDM = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMaDanhMuc_QLDM = new Guna.UI2.WinForms.Guna2TextBox();
@@ -74,13 +73,16 @@
             this.dgvDanhMuc_QLDM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDanhMuc_QLDM.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhMuc_QLDM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhMuc_QLDM.Location = new System.Drawing.Point(3, 271);
             this.dgvDanhMuc_QLDM.Name = "dgvDanhMuc_QLDM";
+            this.dgvDanhMuc_QLDM.RowHeadersVisible = false;
             this.dgvDanhMuc_QLDM.RowHeadersWidth = 51;
             this.dgvDanhMuc_QLDM.RowTemplate.Height = 24;
             this.dgvDanhMuc_QLDM.Size = new System.Drawing.Size(1276, 490);
             this.dgvDanhMuc_QLDM.TabIndex = 3;
+            this.dgvDanhMuc_QLDM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhMuc_QLDM_CellContentClick);
             // 
             // panel1
             // 
@@ -110,6 +112,7 @@
             this.btnExport_QLDM.Size = new System.Drawing.Size(138, 45);
             this.btnExport_QLDM.TabIndex = 23;
             this.btnExport_QLDM.Text = "Export";
+            this.btnExport_QLDM.Click += new System.EventHandler(this.btnExport_QLDM_Click);
             // 
             // btnImport_QLDM
             // 
@@ -126,6 +129,7 @@
             this.btnImport_QLDM.Size = new System.Drawing.Size(138, 45);
             this.btnImport_QLDM.TabIndex = 22;
             this.btnImport_QLDM.Text = "Import";
+            this.btnImport_QLDM.Click += new System.EventHandler(this.btnImport_QLDM_Click);
             // 
             // btnXoa_QLDM
             // 
@@ -142,6 +146,7 @@
             this.btnXoa_QLDM.Size = new System.Drawing.Size(138, 45);
             this.btnXoa_QLDM.TabIndex = 21;
             this.btnXoa_QLDM.Text = "Xóa";
+            this.btnXoa_QLDM.Click += new System.EventHandler(this.btnXoa_QLDM_Click);
             // 
             // btnCapNhat_QLDM
             // 
@@ -158,6 +163,7 @@
             this.btnCapNhat_QLDM.Size = new System.Drawing.Size(138, 45);
             this.btnCapNhat_QLDM.TabIndex = 20;
             this.btnCapNhat_QLDM.Text = "Cập Nhật ";
+            this.btnCapNhat_QLDM.Click += new System.EventHandler(this.btnCapNhat_QLDM_Click);
             // 
             // btnThem_QLDM
             // 
@@ -174,11 +180,11 @@
             this.btnThem_QLDM.Size = new System.Drawing.Size(138, 45);
             this.btnThem_QLDM.TabIndex = 19;
             this.btnThem_QLDM.Text = "Thêm";
+            this.btnThem_QLDM.Click += new System.EventHandler(this.btnThem_QLDM_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnClear_QLDM);
-            this.panel2.Controls.Add(this.btnLoading_QLDM);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtTenDanhMuc_QLDM);
             this.panel2.Controls.Add(this.txtMaDanhMuc_QLDM);
@@ -207,24 +213,7 @@
             this.btnClear_QLDM.Name = "btnClear_QLDM";
             this.btnClear_QLDM.Size = new System.Drawing.Size(50, 41);
             this.btnClear_QLDM.TabIndex = 135;
-            // 
-            // btnLoading_QLDM
-            // 
-            this.btnLoading_QLDM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLoading_QLDM.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLoading_QLDM.BorderRadius = 15;
-            this.btnLoading_QLDM.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoading_QLDM.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoading_QLDM.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLoading_QLDM.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLoading_QLDM.FillColor = System.Drawing.Color.White;
-            this.btnLoading_QLDM.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLoading_QLDM.ForeColor = System.Drawing.Color.White;
-            this.btnLoading_QLDM.Image = ((System.Drawing.Image)(resources.GetObject("btnLoading_QLDM.Image")));
-            this.btnLoading_QLDM.Location = new System.Drawing.Point(872, 93);
-            this.btnLoading_QLDM.Name = "btnLoading_QLDM";
-            this.btnLoading_QLDM.Size = new System.Drawing.Size(50, 42);
-            this.btnLoading_QLDM.TabIndex = 134;
+            this.btnClear_QLDM.Click += new System.EventHandler(this.btnClear_QLDM_Click);
             // 
             // label1
             // 
@@ -275,6 +264,7 @@
             this.txtMaDanhMuc_QLDM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaDanhMuc_QLDM.Name = "txtMaDanhMuc_QLDM";
             this.txtMaDanhMuc_QLDM.PlaceholderText = "";
+            this.txtMaDanhMuc_QLDM.ReadOnly = true;
             this.txtMaDanhMuc_QLDM.SelectedText = "";
             this.txtMaDanhMuc_QLDM.Size = new System.Drawing.Size(280, 41);
             this.txtMaDanhMuc_QLDM.TabIndex = 23;
@@ -309,6 +299,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmQuanLyDanhMuc";
             this.Text = "frmQuanLyDanhMuc";
+            this.Load += new System.EventHandler(this.frmQuanLyDanhMuc_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhMuc_QLDM)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -335,6 +326,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvDanhMuc_QLDM;
         private Guna.UI2.WinForms.Guna2Button btnClear_QLDM;
-        private Guna.UI2.WinForms.Guna2Button btnLoading_QLDM;
     }
 }

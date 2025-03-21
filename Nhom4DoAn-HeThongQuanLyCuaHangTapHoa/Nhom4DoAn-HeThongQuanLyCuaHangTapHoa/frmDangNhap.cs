@@ -14,7 +14,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
     public partial class frmDangNhap: Form
     {
         // Chuỗi kết nối SQL Server
-        string connectionString = "Server=LAPTOPCUAHUY;Database=QuanLyBanHang;Integrated Security=True;";
+        string connectionString = "Server= LAPTOPCUAHUY\\MSSQLSERVER01;Database=quanlycuahangtaphoa;Integrated Security=True;";
         public frmDangNhap()
         {
             InitializeComponent();
@@ -69,7 +69,8 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
                 {
                     conn.Open();
                     // Lấy vai trò của người dùng
-                    string query = "SELECT Role FROM Users WHERE Username = @username AND Password = @password";
+                    string query = "SELECT Role FROM dbo.[User] WHERE Username = @username AND Password = @password";
+
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@username", username);
