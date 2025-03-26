@@ -604,5 +604,31 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
         {
             viewDetailProduct(sender, e);
         }
+
+        private void frmNhanVien_Load_1(object sender, EventArgs e)
+        {
+            grbThongTinKhachHang_NV.Visible = false;
+            grbChiTietSanPham_NV.Visible = false;
+            dgvGioHang_NV.Visible = false;
+            lblDetailID.Visible = false;
+
+            // Thêm sự kiện CellClick cho datagridview sản phẩm
+            dgvSanPham_NV.CellClick += new DataGridViewCellEventHandler(this.dgvSanPham_NV_CellContentClick);
+            dgvGioHang_NV.CellClick += new DataGridViewCellEventHandler(this.dgvGioHang_NV_CellContentClick);
+
+            setDataDgvProducts();
+
+            var categories = NV.Categories.Select(c => new
+            {
+                name = c.name
+            }).ToList();
+
+            cboDanhMuc_NV.Items.Add("Tất cả");
+            foreach (var category in categories)
+            {
+                cboDanhMuc_NV.Items.Add(category.name);
+            }
+            cboDanhMuc_NV.SelectedIndex = 0;
+        }
     }
 }

@@ -811,6 +811,7 @@
             this.Controls.Add(this.btnDangXuat_NV);
             this.Name = "frmNhanVien";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmNhanVien_Load_1);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.grbCheckSDTKhachHang_NV.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
