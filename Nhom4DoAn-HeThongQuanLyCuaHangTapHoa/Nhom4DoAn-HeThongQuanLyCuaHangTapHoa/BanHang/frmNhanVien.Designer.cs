@@ -1,4 +1,4 @@
-﻿namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.BanHang
+﻿namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
 {
     partial class frmNhanVien
     {
@@ -113,6 +113,7 @@
             this.txtTimKiem_NV.SelectedText = "";
             this.txtTimKiem_NV.Size = new System.Drawing.Size(330, 36);
             this.txtTimKiem_NV.TabIndex = 15;
+            this.txtTimKiem_NV.TextChanged += new System.EventHandler(this.txtTimKiem_NV_TextChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -176,6 +177,7 @@
             this.btnKiemTraSdt_NV.Size = new System.Drawing.Size(126, 58);
             this.btnKiemTraSdt_NV.TabIndex = 14;
             this.btnKiemTraSdt_NV.Text = "Kiểm Tra";
+            this.btnKiemTraSdt_NV.Click += new System.EventHandler(this.btnKiemTraSdt_NV_Click);
             // 
             // txtCheckSdt_NV
             // 
@@ -242,6 +244,7 @@
             this.btnThem_NV.Size = new System.Drawing.Size(119, 45);
             this.btnThem_NV.TabIndex = 28;
             this.btnThem_NV.Text = "Thêm";
+            this.btnThem_NV.Click += new System.EventHandler(this.btnThem_NV_Click);
             // 
             // btnSua_NV
             // 
@@ -258,6 +261,7 @@
             this.btnSua_NV.Size = new System.Drawing.Size(119, 45);
             this.btnSua_NV.TabIndex = 27;
             this.btnSua_NV.Text = "Sửa";
+            this.btnSua_NV.Click += new System.EventHandler(this.btnSua_NV_Click);
             // 
             // txtSDT_NV
             // 
@@ -381,6 +385,7 @@
             this.dgvGioHang_NV.RowTemplate.Height = 24;
             this.dgvGioHang_NV.Size = new System.Drawing.Size(903, 335);
             this.dgvGioHang_NV.TabIndex = 0;
+            this.dgvGioHang_NV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGioHang_NV_CellContentClick);
             // 
             // grbChiTietSanPham_NV
             // 
@@ -480,6 +485,7 @@
             this.txtSoLuong_NV.SelectedText = "";
             this.txtSoLuong_NV.Size = new System.Drawing.Size(61, 29);
             this.txtSoLuong_NV.TabIndex = 26;
+            this.txtSoLuong_NV.TextChanged += new System.EventHandler(this.txtSoLuong_NV_TextChanged);
             // 
             // btnTang_NV
             // 
@@ -496,6 +502,7 @@
             this.btnTang_NV.Size = new System.Drawing.Size(56, 29);
             this.btnTang_NV.TabIndex = 24;
             this.btnTang_NV.Text = "+";
+            this.btnTang_NV.Click += new System.EventHandler(this.btnTang_NV_Click);
             // 
             // btnSuDung_NV
             // 
@@ -512,6 +519,7 @@
             this.btnSuDung_NV.Size = new System.Drawing.Size(123, 29);
             this.btnSuDung_NV.TabIndex = 22;
             this.btnSuDung_NV.Text = "Sử dụng";
+            this.btnSuDung_NV.Click += new System.EventHandler(this.btnSuDung_NV_Click);
             // 
             // label17
             // 
@@ -572,6 +580,7 @@
             this.btnXoa_NV.Size = new System.Drawing.Size(123, 29);
             this.btnXoa_NV.TabIndex = 21;
             this.btnXoa_NV.Text = "Xóa";
+            this.btnXoa_NV.Click += new System.EventHandler(this.btnXoa_NV_Click);
             // 
             // btnGiam_NV
             // 
@@ -588,6 +597,7 @@
             this.btnGiam_NV.Size = new System.Drawing.Size(56, 29);
             this.btnGiam_NV.TabIndex = 23;
             this.btnGiam_NV.Text = "-";
+            this.btnGiam_NV.Click += new System.EventHandler(this.btnGiam_NV_Click);
             // 
             // txtGiamGia_NV
             // 
@@ -673,6 +683,7 @@
             this.dgvSanPham_NV.RowTemplate.Height = 24;
             this.dgvSanPham_NV.Size = new System.Drawing.Size(897, 192);
             this.dgvSanPham_NV.TabIndex = 0;
+            this.dgvSanPham_NV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_NV_CellContentClick);
             // 
             // panel1
             // 
@@ -762,6 +773,7 @@
             this.btnThanhToan_NV.Size = new System.Drawing.Size(359, 68);
             this.btnThanhToan_NV.TabIndex = 7;
             this.btnThanhToan_NV.Text = "Thanh Toán";
+            this.btnThanhToan_NV.Click += new System.EventHandler(this.btnThanhToan_NV_Click);
             // 
             // label1
             // 
@@ -788,15 +800,16 @@
             this.btnDangXuat_NV.Name = "btnDangXuat_NV";
             this.btnDangXuat_NV.Size = new System.Drawing.Size(80, 38);
             this.btnDangXuat_NV.TabIndex = 19;
+            this.btnDangXuat_NV.Click += new System.EventHandler(this.btnDangXuat_NV_Click);
             // 
-            // Form1
+            // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1313, 742);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnDangXuat_NV);
-            this.Name = "Form1";
+            this.Name = "frmNhanVien";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.grbCheckSDTKhachHang_NV.ResumeLayout(false);

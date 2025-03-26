@@ -12,6 +12,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
 {
     public partial class frmChiTietHoaDon : Form
     {
+        public int OrderID { get; set; }
         public frmChiTietHoaDon()
         {
             InitializeComponent();

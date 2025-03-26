@@ -8,14 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.BanHang;
+
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
 {
     public partial class frmDangNhap: Form
     {
         public static User currentUser;
-        // Chuỗi kết nối SQL Server
-        string connectionString = "Server= LAPTOPCUAHUY\\MSSQLSERVER01;Database=quanlycuahangtaphoa;Integrated Security=True;";
+
         public frmDangNhap()
         {
             InitializeComponent();
