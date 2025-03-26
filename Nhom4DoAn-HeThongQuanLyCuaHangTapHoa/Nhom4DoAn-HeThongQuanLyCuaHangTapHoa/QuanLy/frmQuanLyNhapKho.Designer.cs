@@ -28,81 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLyNhapKho));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnClear_QLNK = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLoading_QLNK = new Guna.UI2.WinForms.Guna2Button();
+            this.btnImport_QLNK = new Guna.UI2.WinForms.Guna2Button();
+            this.lblThem_QLNK = new System.Windows.Forms.Label();
             this.txtSoLuong_QLNK = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboMatHang_QLNK = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cboNhaCungCap_QLNK = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvNhapKho_QLNK = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnHuy_QLNK = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLuu_QLNK = new Guna.UI2.WinForms.Guna2Button();
             this.btnExport_QLNK = new Guna.UI2.WinForms.Guna2Button();
-            this.btnNhapKho_QLNK = new Guna.UI2.WinForms.Guna2Button();
-            this.btnImport_QLNK = new Guna.UI2.WinForms.Guna2Button();
-            this.panel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgvNhapKho_QLNK = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThem_QLNK = new Guna.UI2.WinForms.Guna2Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhapKho_QLNK)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // btnImport_QLNK
             // 
-            this.panel2.Controls.Add(this.btnClear_QLNK);
-            this.panel2.Controls.Add(this.btnLoading_QLNK);
-            this.panel2.Controls.Add(this.txtSoLuong_QLNK);
-            this.panel2.Controls.Add(this.cboMatHang_QLNK);
-            this.panel2.Controls.Add(this.cboNhaCungCap_QLNK);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1276, 262);
-            this.panel2.TabIndex = 1;
+            this.btnImport_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnImport_QLNK.BorderRadius = 15;
+            this.btnImport_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnImport_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnImport_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnImport_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnImport_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport_QLNK.ForeColor = System.Drawing.Color.White;
+            this.btnImport_QLNK.Location = new System.Drawing.Point(790, 18);
+            this.btnImport_QLNK.Name = "btnImport_QLNK";
+            this.btnImport_QLNK.Size = new System.Drawing.Size(180, 45);
+            this.btnImport_QLNK.TabIndex = 36;
+            this.btnImport_QLNK.Text = "Import";
+            this.btnImport_QLNK.Click += new System.EventHandler(this.btnImport_QLNK_Click);
             // 
-            // btnClear_QLNK
+            // lblThem_QLNK
             // 
-            this.btnClear_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnClear_QLNK.BackColor = System.Drawing.SystemColors.Control;
-            this.btnClear_QLNK.BorderRadius = 15;
-            this.btnClear_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClear_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClear_QLNK.FillColor = System.Drawing.Color.White;
-            this.btnClear_QLNK.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClear_QLNK.ForeColor = System.Drawing.Color.White;
-            this.btnClear_QLNK.Image = ((System.Drawing.Image)(resources.GetObject("btnClear_QLNK.Image")));
-            this.btnClear_QLNK.Location = new System.Drawing.Point(962, 187);
-            this.btnClear_QLNK.Name = "btnClear_QLNK";
-            this.btnClear_QLNK.Size = new System.Drawing.Size(50, 48);
-            this.btnClear_QLNK.TabIndex = 135;
-            // 
-            // btnLoading_QLNK
-            // 
-            this.btnLoading_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLoading_QLNK.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLoading_QLNK.BorderRadius = 15;
-            this.btnLoading_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoading_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoading_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLoading_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLoading_QLNK.FillColor = System.Drawing.Color.White;
-            this.btnLoading_QLNK.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLoading_QLNK.ForeColor = System.Drawing.Color.White;
-            this.btnLoading_QLNK.Image = ((System.Drawing.Image)(resources.GetObject("btnLoading_QLNK.Image")));
-            this.btnLoading_QLNK.Location = new System.Drawing.Point(962, 131);
-            this.btnLoading_QLNK.Name = "btnLoading_QLNK";
-            this.btnLoading_QLNK.Size = new System.Drawing.Size(50, 42);
-            this.btnLoading_QLNK.TabIndex = 134;
+            this.lblThem_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblThem_QLNK.AutoSize = true;
+            this.lblThem_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThem_QLNK.Location = new System.Drawing.Point(28, 63);
+            this.lblThem_QLNK.Name = "lblThem_QLNK";
+            this.lblThem_QLNK.Size = new System.Drawing.Size(0, 22);
+            this.lblThem_QLNK.TabIndex = 138;
             // 
             // txtSoLuong_QLNK
             // 
@@ -192,6 +166,57 @@
             this.label5.TabIndex = 33;
             this.label5.Text = "Số Lượng";
             // 
+            // btnHuy_QLNK
+            // 
+            this.btnHuy_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnHuy_QLNK.BorderRadius = 15;
+            this.btnHuy_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHuy_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHuy_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHuy_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy_QLNK.ForeColor = System.Drawing.Color.White;
+            this.btnHuy_QLNK.Location = new System.Drawing.Point(547, 18);
+            this.btnHuy_QLNK.Name = "btnHuy_QLNK";
+            this.btnHuy_QLNK.Size = new System.Drawing.Size(180, 45);
+            this.btnHuy_QLNK.TabIndex = 39;
+            this.btnHuy_QLNK.Text = "Hủy";
+            this.btnHuy_QLNK.Click += new System.EventHandler(this.btnHuy_QLNK_Click_1);
+            // 
+            // btnLuu_QLNK
+            // 
+            this.btnLuu_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLuu_QLNK.BorderRadius = 15;
+            this.btnLuu_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLuu_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLuu_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLuu_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu_QLNK.ForeColor = System.Drawing.Color.White;
+            this.btnLuu_QLNK.Location = new System.Drawing.Point(303, 18);
+            this.btnLuu_QLNK.Name = "btnLuu_QLNK";
+            this.btnLuu_QLNK.Size = new System.Drawing.Size(180, 45);
+            this.btnLuu_QLNK.TabIndex = 38;
+            this.btnLuu_QLNK.Text = "Lưu";
+            this.btnLuu_QLNK.Click += new System.EventHandler(this.btnLuu_QLNK_Click);
+            // 
+            // btnExport_QLNK
+            // 
+            this.btnExport_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExport_QLNK.BorderRadius = 15;
+            this.btnExport_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExport_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExport_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExport_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExport_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport_QLNK.ForeColor = System.Drawing.Color.White;
+            this.btnExport_QLNK.Location = new System.Drawing.Point(1032, 18);
+            this.btnExport_QLNK.Name = "btnExport_QLNK";
+            this.btnExport_QLNK.Size = new System.Drawing.Size(180, 45);
+            this.btnExport_QLNK.TabIndex = 37;
+            this.btnExport_QLNK.Text = "Export";
+            this.btnExport_QLNK.Click += new System.EventHandler(this.btnExport_QLNK_Click);
+            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -200,9 +225,24 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(495, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(364, 38);
+            this.label4.Size = new System.Drawing.Size(352, 37);
             this.label4.TabIndex = 28;
             this.label4.Text = "QUẢN LÝ NHẬP KHO";
+            // 
+            // dgvNhapKho_QLNK
+            // 
+            this.dgvNhapKho_QLNK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvNhapKho_QLNK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvNhapKho_QLNK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhapKho_QLNK.Location = new System.Drawing.Point(4, 271);
+            this.dgvNhapKho_QLNK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dgvNhapKho_QLNK.Name = "dgvNhapKho_QLNK";
+            this.dgvNhapKho_QLNK.RowHeadersWidth = 51;
+            this.dgvNhapKho_QLNK.Size = new System.Drawing.Size(1274, 490);
+            this.dgvNhapKho_QLNK.TabIndex = 32;
+            this.dgvNhapKho_QLNK.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhapKho_QLNK_CellContentClick);
             // 
             // tableLayoutPanel1
             // 
@@ -220,27 +260,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.92146F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1282, 853);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // dgvNhapKho_QLNK
-            // 
-            this.dgvNhapKho_QLNK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvNhapKho_QLNK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvNhapKho_QLNK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhapKho_QLNK.Location = new System.Drawing.Point(4, 271);
-            this.dgvNhapKho_QLNK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dgvNhapKho_QLNK.Name = "dgvNhapKho_QLNK";
-            this.dgvNhapKho_QLNK.RowHeadersVisible = false;
-            this.dgvNhapKho_QLNK.RowHeadersWidth = 51;
-            this.dgvNhapKho_QLNK.Size = new System.Drawing.Size(1274, 490);
-            this.dgvNhapKho_QLNK.TabIndex = 32;
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnHuy_QLNK);
+            this.panel1.Controls.Add(this.btnLuu_QLNK);
             this.panel1.Controls.Add(this.btnExport_QLNK);
-            this.panel1.Controls.Add(this.btnNhapKho_QLNK);
+            this.panel1.Controls.Add(this.btnThem_QLNK);
             this.panel1.Controls.Add(this.btnImport_QLNK);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(3, 767);
@@ -248,53 +275,38 @@
             this.panel1.Size = new System.Drawing.Size(1276, 83);
             this.panel1.TabIndex = 0;
             // 
-            // btnExport_QLNK
+            // btnThem_QLNK
             // 
-            this.btnExport_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExport_QLNK.BorderRadius = 15;
-            this.btnExport_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExport_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExport_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExport_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExport_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExport_QLNK.ForeColor = System.Drawing.Color.White;
-            this.btnExport_QLNK.Location = new System.Drawing.Point(1032, 18);
-            this.btnExport_QLNK.Name = "btnExport_QLNK";
-            this.btnExport_QLNK.Size = new System.Drawing.Size(180, 45);
-            this.btnExport_QLNK.TabIndex = 37;
-            this.btnExport_QLNK.Text = "Export";
+            this.btnThem_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThem_QLNK.BorderRadius = 15;
+            this.btnThem_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThem_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem_QLNK.ForeColor = System.Drawing.Color.White;
+            this.btnThem_QLNK.Location = new System.Drawing.Point(65, 18);
+            this.btnThem_QLNK.Name = "btnThem_QLNK";
+            this.btnThem_QLNK.Size = new System.Drawing.Size(180, 45);
+            this.btnThem_QLNK.TabIndex = 35;
+            this.btnThem_QLNK.Text = "Thêm";
+            this.btnThem_QLNK.Click += new System.EventHandler(this.btnThem_QLNK_Click);
             // 
-            // btnNhapKho_QLNK
+            // panel2
             // 
-            this.btnNhapKho_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNhapKho_QLNK.BorderRadius = 15;
-            this.btnNhapKho_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhapKho_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNhapKho_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNhapKho_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNhapKho_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhapKho_QLNK.ForeColor = System.Drawing.Color.White;
-            this.btnNhapKho_QLNK.Location = new System.Drawing.Point(65, 18);
-            this.btnNhapKho_QLNK.Name = "btnNhapKho_QLNK";
-            this.btnNhapKho_QLNK.Size = new System.Drawing.Size(180, 45);
-            this.btnNhapKho_QLNK.TabIndex = 35;
-            this.btnNhapKho_QLNK.Text = "Nhập Kho";
-            // 
-            // btnImport_QLNK
-            // 
-            this.btnImport_QLNK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnImport_QLNK.BorderRadius = 15;
-            this.btnImport_QLNK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnImport_QLNK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnImport_QLNK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnImport_QLNK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnImport_QLNK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImport_QLNK.ForeColor = System.Drawing.Color.White;
-            this.btnImport_QLNK.Location = new System.Drawing.Point(547, 18);
-            this.btnImport_QLNK.Name = "btnImport_QLNK";
-            this.btnImport_QLNK.Size = new System.Drawing.Size(180, 45);
-            this.btnImport_QLNK.TabIndex = 36;
-            this.btnImport_QLNK.Text = "Import";
+            this.panel2.Controls.Add(this.lblThem_QLNK);
+            this.panel2.Controls.Add(this.txtSoLuong_QLNK);
+            this.panel2.Controls.Add(this.cboMatHang_QLNK);
+            this.panel2.Controls.Add(this.cboNhaCungCap_QLNK);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1276, 262);
+            this.panel2.TabIndex = 1;
             // 
             // frmQuanLyNhapKho
             // 
@@ -303,33 +315,35 @@
             this.ClientSize = new System.Drawing.Size(1282, 853);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmQuanLyNhapKho";
-            this.Text = "frmQuanLyNhapKho";
+            this.Text = "Form3";
+            this.Load += new System.EventHandler(this.frmQuanLyNhapKho_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhapKho_QLNK)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhapKho_QLNK)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2Button btnExport_QLNK;
-        private Guna.UI2.WinForms.Guna2Button btnNhapKho_QLNK;
         private Guna.UI2.WinForms.Guna2Button btnImport_QLNK;
-        private System.Windows.Forms.DataGridView dgvNhapKho_QLNK;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblThem_QLNK;
         private Guna.UI2.WinForms.Guna2TextBox txtSoLuong_QLNK;
         private Guna.UI2.WinForms.Guna2ComboBox cboMatHang_QLNK;
         private Guna.UI2.WinForms.Guna2ComboBox cboNhaCungCap_QLNK;
-        private Guna.UI2.WinForms.Guna2Button btnClear_QLNK;
-        private Guna.UI2.WinForms.Guna2Button btnLoading_QLNK;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Button btnHuy_QLNK;
+        private Guna.UI2.WinForms.Guna2Button btnLuu_QLNK;
+        private Guna.UI2.WinForms.Guna2Button btnExport_QLNK;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgvNhapKho_QLNK;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button btnThem_QLNK;
+        private System.Windows.Forms.Panel panel2;
     }
 }

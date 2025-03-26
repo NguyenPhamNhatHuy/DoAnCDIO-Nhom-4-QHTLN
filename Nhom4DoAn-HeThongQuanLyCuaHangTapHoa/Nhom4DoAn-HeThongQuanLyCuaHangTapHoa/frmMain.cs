@@ -1,5 +1,6 @@
 ﻿using Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon;
 using Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy;
+using Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,8 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
 {
     public partial class frmMain: Form
     {
+        private User user;
+        public User User { get => user; set => user = value; }
         public frmMain()
         {
             InitializeComponent();
@@ -95,6 +98,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
         {
             ActivateButton(sender);
             openChildForm(new frmThongKe());
+
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)

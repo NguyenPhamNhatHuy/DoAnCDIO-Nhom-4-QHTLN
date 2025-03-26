@@ -46,7 +46,7 @@
     <Property Name="name" Type="nvarchar" MaxLength="100" />
     <Property Name="stockOnHand" Type="int" />
     <Property Name="price" Type="bigint" />
-    <Property Name="thumb" Type="varchar" MaxLength="100" />
+    <Property Name="imagePath" Type="nvarchar" MaxLength="255" />
     <Property Name="categoryID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="StockIn">

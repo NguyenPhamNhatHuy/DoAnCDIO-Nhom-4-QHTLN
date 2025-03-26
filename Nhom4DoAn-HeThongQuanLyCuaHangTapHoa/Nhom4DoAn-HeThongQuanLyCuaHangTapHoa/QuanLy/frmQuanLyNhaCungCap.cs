@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 {
-    public partial class frmQuanLyNhaCungCap: Form
+    public partial class frmQuanLyNhaCungCap : Form
     {
         public frmQuanLyNhaCungCap()
         {

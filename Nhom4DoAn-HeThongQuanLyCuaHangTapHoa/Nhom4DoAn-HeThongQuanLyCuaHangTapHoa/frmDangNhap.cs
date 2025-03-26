@@ -8,11 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.BanHang;
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
 {
     public partial class frmDangNhap: Form
     {
+        public static User currentUser;
         // Chuỗi kết nối SQL Server
         string connectionString = "Server= LAPTOPCUAHUY\\MSSQLSERVER01;Database=quanlycuahangtaphoa;Integrated Security=True;";
         public frmDangNhap()
@@ -63,50 +64,50 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
                 return;
             }
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
+                using (var dbContext = new quanlycuahangtaphoaEntities())
                 {
-                    conn.Open();
-                    // Lấy vai trò của người dùng
-                    string query = "SELECT Role FROM dbo.[User] WHERE Username = @username AND Password = @password";
+                    // Sử dụng Entity Framework để truy vấn người dùng
+                    var user = dbContext.Users
+                        .Where(u => u.username == username && u.password == password)
+                        .FirstOrDefault();
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    if (user != null)
                     {
-                        cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@password", password);
+                        // Lưu thông tin người dùng hiện tại
+                        currentUser = user;
 
-                        object result = cmd.ExecuteScalar(); // Lấy vai trò
+                        // Đăng nhập thành công
+                        this.Hide(); // Ẩn form đăng nhập
 
-                        if (result != null)
+                        // Kiểm tra vai trò và mở form tương ứng
+                        if (user.role == "Admin")
                         {
-                            string role = result.ToString(); // Lấy vai trò từ kết quả
-
-                            // Đăng nhập thành công
-                            this.Hide(); // Ẩn form đăng nhập
-
-                            // Kiểm tra vai trò và mở form tương ứng
-                            if (role == "Admin")
-                            {
-                                frmMain adminForm = new frmMain();
-                                adminForm.ShowDialog(); // Hiển thị form admin
-                            }
-                            else if (role == "Employee")
-                            {
-                                frmNhanVien NhanVien = new frmNhanVien();
-                                NhanVien.ShowDialog(); // Hiển thị form nhân viên
-                            }
+                            frmMain adminform = new frmMain();
+                            adminform.User = user; // Truyền thông tin người dùng sang form
+                            adminform.ShowDialog(); // Hiển thị form admin
+                        }
+                        else if (user.role == "Nhân Viên")
+                        {
+                            frmNhanVien nhanVienform = new frmNhanVien();
+                            nhanVienform.User = user; // Truyền thông tin người dùng sang form
+                            nhanVienform.ShowDialog(); // Hiển thị form nhân viên
                         }
                         else
                         {
-                            MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Vai trò người dùng không được hỗ trợ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối đến cơ sở dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void btnHuyDangNhap_Click(object sender, EventArgs e)

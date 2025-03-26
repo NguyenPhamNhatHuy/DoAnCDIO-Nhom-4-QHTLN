@@ -41,6 +41,7 @@
             // 
             // btnHuyDangNhap
             // 
+            this.btnHuyDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHuyDangNhap.BorderRadius = 20;
             this.btnHuyDangNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnHuyDangNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -57,6 +58,7 @@
             // 
             // ckbHienThiPassword
             // 
+            this.ckbHienThiPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ckbHienThiPassword.AutoSize = true;
             this.ckbHienThiPassword.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbHienThiPassword.Location = new System.Drawing.Point(206, 229);
@@ -69,6 +71,7 @@
             // 
             // btnDangNhap
             // 
+            this.btnDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDangNhap.BorderRadius = 20;
             this.btnDangNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDangNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -85,6 +88,7 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.BorderRadius = 20;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.DefaultText = "";
@@ -106,6 +110,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.BorderRadius = 20;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.DefaultText = "";
@@ -127,6 +132,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(37, 184);
@@ -137,6 +143,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(37, 112);
@@ -147,6 +154,7 @@
             // 
             // lblDangNhap
             // 
+            this.lblDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDangNhap.AutoSize = true;
             this.lblDangNhap.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangNhap.Location = new System.Drawing.Point(238, 21);

@@ -25,7 +25,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
         public string name { get; set; }
         public Nullable<int> stockOnHand { get; set; }
         public Nullable<long> price { get; set; }
-        public string thumb { get; set; }
+        public string imagePath { get; set; }
         public int categoryID { get; set; }
     
         public virtual Category Category { get; set; }

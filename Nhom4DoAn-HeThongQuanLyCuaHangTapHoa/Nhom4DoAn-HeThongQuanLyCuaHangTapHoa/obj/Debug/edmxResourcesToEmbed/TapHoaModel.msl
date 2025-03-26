@@ -49,7 +49,7 @@
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="stockOnHand" ColumnName="stockOnHand" />
           <ScalarProperty Name="price" ColumnName="price" />
-          <ScalarProperty Name="thumb" ColumnName="thumb" />
+          <ScalarProperty Name="imagePath" ColumnName="imagePath" />
           <ScalarProperty Name="categoryID" ColumnName="categoryID" />
         </MappingFragment>
       </EntityTypeMapping>

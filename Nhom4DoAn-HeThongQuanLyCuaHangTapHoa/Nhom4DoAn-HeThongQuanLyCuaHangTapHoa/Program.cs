@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy;
+using Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
 {

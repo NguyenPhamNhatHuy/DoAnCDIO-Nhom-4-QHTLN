@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
 {
-    public partial class frmChiTietHoaDon: Form
+    public partial class frmChiTietHoaDon : Form
     {
         public frmChiTietHoaDon()
         {

@@ -53,7 +53,7 @@
     <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="stockOnHand" Type="Int32" />
     <Property Name="price" Type="Int64" />
-    <Property Name="thumb" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="imagePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="categoryID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Category" Relationship="Self.FK__Product__categor__160F4887" FromRole="Product" ToRole="Category" />
     <NavigationProperty Name="OrderDetails" Relationship="Self.FK__OrderDeta__produ__19DFD96B" FromRole="Product" ToRole="OrderDetail" />
