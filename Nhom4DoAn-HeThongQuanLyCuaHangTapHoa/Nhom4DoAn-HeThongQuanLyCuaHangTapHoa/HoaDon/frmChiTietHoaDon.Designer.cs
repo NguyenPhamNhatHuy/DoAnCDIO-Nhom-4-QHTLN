@@ -233,15 +233,17 @@
             this.btnIn_CTHD.Size = new System.Drawing.Size(144, 45);
             this.btnIn_CTHD.TabIndex = 23;
             this.btnIn_CTHD.Text = "In hóa đơn";
+            this.btnIn_CTHD.Click += new System.EventHandler(this.btnIn_CTHD_Click);
             // 
-            // Form2
+            // frmChiTietHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 853);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form2";
+            this.Name = "frmChiTietHoaDon";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.frmChiTietHoaDon_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

@@ -138,6 +138,7 @@
             this.dgvHoaDon_QLHD.RowTemplate.Height = 24;
             this.dgvHoaDon_QLHD.Size = new System.Drawing.Size(1269, 399);
             this.dgvHoaDon_QLHD.TabIndex = 0;
+            this.dgvHoaDon_QLHD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_QLHD_CellContentClick);
             // 
             // panel1
             // 
@@ -167,6 +168,7 @@
             this.btnXemChiTiet_QLHD.Size = new System.Drawing.Size(168, 46);
             this.btnXemChiTiet_QLHD.TabIndex = 18;
             this.btnXemChiTiet_QLHD.Text = "Xem Chi Tiết";
+            this.btnXemChiTiet_QLHD.Click += new System.EventHandler(this.btnXemChiTiet_QLHD_Click);
             // 
             // groupBox1
             // 
@@ -242,14 +244,15 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "QUẢN LÝ HOÁ ĐƠN";
             // 
-            // Form1
+            // frmQuanLyHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 853);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Name = "Form1";
+            this.Name = "frmQuanLyHoaDon";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmQuanLyHoaDon_Load);
             this.grBHoaDon_QLHD.ResumeLayout(false);
             this.grBHoaDon_QLHD.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

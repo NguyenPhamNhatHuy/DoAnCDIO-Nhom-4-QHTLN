@@ -1,73 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\huy78\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|c:\\users\\huy78\\onedrive\\m\u00E1y t\u00EDnh\\doancdio-nhom-4-qhtln\\nhom4doan-hethongquanlycuahangtaphoa\\nhom4doan-hethongquanlycuahangtaphoa\\banhang\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|solutionrelative:nhom4doan-hethongquanlycuahangtaphoa\\banhang\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|c:\\users\\huy78\\onedrive\\m\u00E1y t\u00EDnh\\doancdio-nhom-4-qhtln\\nhom4doan-hethongquanlycuahangtaphoa\\nhom4doan-hethongquanlycuahangtaphoa\\banhang\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|solutionrelative:nhom4doan-hethongquanlycuahangtaphoa\\banhang\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "WorkspaceRootPath": "E:\\ACER PROFILE\\Desktop\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmNhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\huy78\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs",
-              "RelativeDocumentMoniker": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs",
-              "ToolTip": "C:\\Users\\huy78\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs",
-              "RelativeToolTip": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs",
-              "ViewState": "AgIAAFUCAAAAAAAAAAAqwHECAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:40:30.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmNhanVien.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\huy78\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs",
-              "RelativeDocumentMoniker": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs",
-              "ToolTip": "C:\\Users\\huy78\\OneDrive\\M\u00E1y t\u00EDnh\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs [Design]",
-              "RelativeToolTip": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\BanHang\\frmNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:40:27.667Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
