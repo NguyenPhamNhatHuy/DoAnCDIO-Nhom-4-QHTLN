@@ -1,12 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\phong\\Desktop\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\quann\\source\\repos\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|c:\\users\\quann\\source\\repos\\doancdio-nhom-4-qhtln\\nhom4doan-hethongquanlycuahangtaphoa\\nhom4doan-hethongquanlycuahangtaphoa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{280D85F4-32E1-437C-989D-D7CA9040E7B3}|Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj|solutionrelative:nhom4doan-hethongquanlycuahangtaphoa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\quann\\source\\repos\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\App.config",
+              "RelativeDocumentMoniker": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\App.config",
+              "ToolTip": "C:\\Users\\quann\\source\\repos\\DoAnCDIO-Nhom-4-QHTLN\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\App.config",
+              "RelativeToolTip": "Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-26T13:23:04.019Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

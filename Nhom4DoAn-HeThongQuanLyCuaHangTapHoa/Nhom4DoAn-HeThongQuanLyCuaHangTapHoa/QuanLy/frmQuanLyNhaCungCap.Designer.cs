@@ -64,6 +64,7 @@
             this.dgvCungCap_QLNCC.RowTemplate.Height = 24;
             this.dgvCungCap_QLNCC.Size = new System.Drawing.Size(1276, 510);
             this.dgvCungCap_QLNCC.TabIndex = 2;
+            this.dgvCungCap_QLNCC.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCungCap_QLNCC_CellContentClick);
             // 
             // btnExport_QLNCC
             // 
@@ -80,6 +81,7 @@
             this.btnExport_QLNCC.Size = new System.Drawing.Size(136, 45);
             this.btnExport_QLNCC.TabIndex = 36;
             this.btnExport_QLNCC.Text = "Export";
+            this.btnExport_QLNCC.Click += new System.EventHandler(this.btnExport_QLNCC_Click);
             // 
             // btnHuy_QLNCC
             // 
@@ -96,6 +98,7 @@
             this.btnHuy_QLNCC.Size = new System.Drawing.Size(136, 45);
             this.btnHuy_QLNCC.TabIndex = 35;
             this.btnHuy_QLNCC.Text = "Hủy";
+            this.btnHuy_QLNCC.Click += new System.EventHandler(this.btnHuy_QLNCC_Click);
             // 
             // btnLuu_QLNCC
             // 
@@ -112,6 +115,7 @@
             this.btnLuu_QLNCC.Size = new System.Drawing.Size(136, 45);
             this.btnLuu_QLNCC.TabIndex = 34;
             this.btnLuu_QLNCC.Text = "Lưu";
+            this.btnLuu_QLNCC.Click += new System.EventHandler(this.btnLuu_QLNCC_Click);
             // 
             // btnImport_QLNCC
             // 
@@ -128,6 +132,7 @@
             this.btnImport_QLNCC.Size = new System.Drawing.Size(136, 45);
             this.btnImport_QLNCC.TabIndex = 32;
             this.btnImport_QLNCC.Text = "Import";
+            this.btnImport_QLNCC.Click += new System.EventHandler(this.btnImport_QLNCC_Click);
             // 
             // btnXoa_QLNCC
             // 
@@ -144,6 +149,7 @@
             this.btnXoa_QLNCC.Size = new System.Drawing.Size(136, 45);
             this.btnXoa_QLNCC.TabIndex = 31;
             this.btnXoa_QLNCC.Text = "Xóa";
+            this.btnXoa_QLNCC.Click += new System.EventHandler(this.btnXoa_QLNCC_Click);
             // 
             // btnCapNhat_QLNCC
             // 
@@ -160,6 +166,7 @@
             this.btnCapNhat_QLNCC.Size = new System.Drawing.Size(136, 45);
             this.btnCapNhat_QLNCC.TabIndex = 30;
             this.btnCapNhat_QLNCC.Text = "Cập Nhật ";
+            this.btnCapNhat_QLNCC.Click += new System.EventHandler(this.btnCapNhat_QLNCC_Click);
             // 
             // panel1
             // 
@@ -191,6 +198,7 @@
             this.btnThem_QLNCC.Size = new System.Drawing.Size(136, 45);
             this.btnThem_QLNCC.TabIndex = 29;
             this.btnThem_QLNCC.Text = "Thêm";
+            this.btnThem_QLNCC.Click += new System.EventHandler(this.btnThem_QLNCC_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -343,14 +351,15 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "QUẢN LÝ NHÀ CUNG CẤP";
             // 
-            // Form2
+            // frmQuanLyNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 853);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form2";
+            this.Name = "frmQuanLyNhaCungCap";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.frmQuanLyNhaCungCap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCungCap_QLNCC)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

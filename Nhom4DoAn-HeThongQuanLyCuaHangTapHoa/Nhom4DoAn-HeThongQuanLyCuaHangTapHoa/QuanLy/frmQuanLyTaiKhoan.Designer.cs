@@ -78,6 +78,7 @@
             this.btnLuu_QLTK.Size = new System.Drawing.Size(147, 56);
             this.btnLuu_QLTK.TabIndex = 110;
             this.btnLuu_QLTK.Text = "Lưu";
+            this.btnLuu_QLTK.Click += new System.EventHandler(this.btnLuu_QLTK_Click);
             // 
             // panel1
             // 
@@ -107,6 +108,7 @@
             this.btnHuy_QLTK.Size = new System.Drawing.Size(147, 56);
             this.btnHuy_QLTK.TabIndex = 114;
             this.btnHuy_QLTK.Text = "Hủy";
+            this.btnHuy_QLTK.Click += new System.EventHandler(this.btnHuy_QLTK_Click);
             // 
             // btnThem_QLTK
             // 
@@ -123,6 +125,7 @@
             this.btnThem_QLTK.Size = new System.Drawing.Size(147, 56);
             this.btnThem_QLTK.TabIndex = 113;
             this.btnThem_QLTK.Text = "Thêm";
+            this.btnThem_QLTK.Click += new System.EventHandler(this.btnThem_QLTK_Click);
             // 
             // btnCapNhat_QLTK
             // 
@@ -139,6 +142,7 @@
             this.btnCapNhat_QLTK.Size = new System.Drawing.Size(147, 56);
             this.btnCapNhat_QLTK.TabIndex = 112;
             this.btnCapNhat_QLTK.Text = "Cập Nhật";
+            this.btnCapNhat_QLTK.Click += new System.EventHandler(this.btnCapNhat_QLTK_Click);
             // 
             // btnXoa_QLTK
             // 
@@ -155,6 +159,7 @@
             this.btnXoa_QLTK.Size = new System.Drawing.Size(147, 56);
             this.btnXoa_QLTK.TabIndex = 111;
             this.btnXoa_QLTK.Text = "Xóa";
+            this.btnXoa_QLTK.Click += new System.EventHandler(this.btnXoa_QLTK_Click);
             // 
             // lblThem_QLTK
             // 
@@ -277,6 +282,7 @@
             this.cboQuyen2_QLTK.Name = "cboQuyen2_QLTK";
             this.cboQuyen2_QLTK.Size = new System.Drawing.Size(265, 36);
             this.cboQuyen2_QLTK.TabIndex = 152;
+            this.cboQuyen2_QLTK.SelectedIndexChanged += new System.EventHandler(this.cboQuyen2_QLTK_SelectedIndexChanged);
             // 
             // txtDienThoai_TK
             // 
@@ -522,15 +528,17 @@
             this.dgvTaiKhoan_QLTK.RowTemplate.Height = 24;
             this.dgvTaiKhoan_QLTK.Size = new System.Drawing.Size(1276, 399);
             this.dgvTaiKhoan_QLTK.TabIndex = 2;
+            this.dgvTaiKhoan_QLTK.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTaiKhoan_QLTK_CellContentClick);
             // 
-            // Form4
+            // frmQuanLyTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 853);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "Form4";
+            this.Name = "frmQuanLyTaiKhoan";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.frmQuanLyTaiKhoan_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
