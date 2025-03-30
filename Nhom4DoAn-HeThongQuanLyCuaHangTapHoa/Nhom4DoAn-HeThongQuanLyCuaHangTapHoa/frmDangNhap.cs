@@ -14,7 +14,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
     public partial class frmDangNhap: Form
     {
         public static User currentUser;
-
+       
         public frmDangNhap()
         {
             InitializeComponent();

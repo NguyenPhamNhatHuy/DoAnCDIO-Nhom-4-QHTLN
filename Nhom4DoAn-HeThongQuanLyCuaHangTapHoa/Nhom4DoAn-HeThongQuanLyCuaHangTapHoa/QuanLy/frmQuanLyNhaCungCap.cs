@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 {
-    public partial class frmQuanLyNhaCungCap : Form
+    public partial class frmQuanLyNhaCungCap: Form
     {
         quanlycuahangtaphoaEntities NCC = new quanlycuahangtaphoaEntities();
         private bool isAdding = false;
@@ -21,9 +21,9 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             InitializeComponent();
         }
 
-        private void ResetValues()
+        private void ResetValues_SP()
         {
-            ClearTextBoxes();
+           ClearTextBoxes();
 
             btnCapNhat_QLNCC.Enabled = false;
             btnHuy_QLNCC.Enabled = false;
@@ -39,7 +39,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             txtMaNhaCungCap_QLNCC.Text = "";
             txtTenNhaCungCap_QLNCC.Text = "";
             txtDiaChi_QLNCC.Text = "";
-
+       
             // Xóa thông báo chế độ thêm nếu có
             lblThem_QLNCC.Text = "";
         }
@@ -57,11 +57,12 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             dgvCungCap_QLNCC.Columns[2].HeaderText = "Địa chỉ";
             dgvCungCap_QLNCC.CellClick += new DataGridViewCellEventHandler(dgvCungCap_QLNCC_CellContentClick);
 
-            ResetValues();
+            ResetValues_SP();
         }
 
         private void btnThem_QLNCC_Click(object sender, EventArgs e)
         {
+
             // Đặt chế độ thêm
             isAdding = true;
 
@@ -88,6 +89,33 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
             // Đặt focus vào ô tên sản phẩm
             txtMaNhaCungCap_QLNCC.Focus();
+        }
+
+        private void dgvCungCap_QLNCC_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            try
+            {
+                // Kiểm tra nếu đang ở chế độ thêm
+                if (isAdding)
+                {
+                    MessageBox.Show("Bạn không thể chọn danh mục trong khi đang ở chế độ thêm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                txtMaNhaCungCap_QLNCC.Text = dgvCungCap_QLNCC.Rows[row].Cells[0].Value.ToString();
+                txtTenNhaCungCap_QLNCC.Text = dgvCungCap_QLNCC.Rows[row].Cells[1].Value.ToString();
+                txtDiaChi_QLNCC.Text = dgvCungCap_QLNCC.Rows[row].Cells[2].Value.ToString();
+
+                // Kích hoạt các nút chức năng
+                btnCapNhat_QLNCC.Enabled = true;
+                btnXoa_QLNCC.Enabled = true;
+                btnHuy_QLNCC.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi hiển thị dữ liệu: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnLuu_QLNCC_Click(object sender, EventArgs e)
@@ -124,7 +152,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
         private void btnHuy_QLNCC_Click(object sender, EventArgs e)
         {
-            ResetValues();
+            ResetValues_SP();
             // Reset trạng thái thêm
             isAdding = false;
 
@@ -153,7 +181,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
                 }
                 else
                 {
-
+                   
                     NCC.SaveChanges();
                     LoadData();
                     ClearTextBoxes();
@@ -172,7 +200,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
                 int removeID = int.Parse(txtMaNhaCungCap_QLNCC.Text);
                 Supplier supplier = NCC.Suppliers.
                     SingleOrDefault(s => s.supplierID == removeID);
-                NCC.Entry(supplier).State = System.Data.Entity.EntityState.Deleted;
+              NCC.Entry(supplier).State = System.Data.Entity.EntityState.Deleted;
                 DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Cảnh báo",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult.Equals(DialogResult.Yes))
@@ -186,10 +214,12 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             {
                 MessageBox.Show("Lỗi: " + exp.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void btnImport_QLNCC_Click(object sender, EventArgs e)
         {
+
             _Application importApp;
             _Workbook importWorkbook;
             _Worksheet importWorksheet;
@@ -270,33 +300,6 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             }
         }
 
-        private void dgvCungCap_QLNCC_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int row = e.RowIndex;
-            try
-            {
-                // Kiểm tra nếu đang ở chế độ thêm
-                if (isAdding)
-                {
-                    MessageBox.Show("Bạn không thể chọn danh mục trong khi đang ở chế độ thêm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                txtMaNhaCungCap_QLNCC.Text = dgvCungCap_QLNCC.Rows[row].Cells[0].Value.ToString();
-                txtTenNhaCungCap_QLNCC.Text = dgvCungCap_QLNCC.Rows[row].Cells[1].Value.ToString();
-                txtDiaChi_QLNCC.Text = dgvCungCap_QLNCC.Rows[row].Cells[2].Value.ToString();
-
-                // Kích hoạt các nút chức năng
-                btnCapNhat_QLNCC.Enabled = true;
-                btnXoa_QLNCC.Enabled = true;
-                btnHuy_QLNCC.Enabled = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Đã xảy ra lỗi khi hiển thị dữ liệu: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void frmQuanLyNhaCungCap_Load(object sender, EventArgs e)
         {
             LoadData();
@@ -304,3 +307,4 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
         }
     }
 }
+

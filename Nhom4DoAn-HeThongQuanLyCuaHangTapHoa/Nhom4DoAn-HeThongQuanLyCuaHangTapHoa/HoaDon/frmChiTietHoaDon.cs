@@ -15,7 +15,7 @@ using static System.Data.Entity.Infrastructure.Design.Executor;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
 {
-    public partial class frmChiTietHoaDon : Form
+    public partial class frmChiTietHoaDon: Form
     {
         private int orderID;
         quanlycuahangtaphoaEntities HD = new quanlycuahangtaphoaEntities();
@@ -66,7 +66,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
                 // Format date and time
                 if (order.createdAt != null)
                 {
-                    // With this line
+                // With this line
                     lbNgayBan_CTHD.Text = "Ngày bán: " + order.createdAt?.ToString("dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
                 }
                 else
@@ -236,12 +236,12 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
                     document.Add(new Paragraph("\n"));
 
                     // Thông tin hóa đơn
-                    document.Add(new Paragraph(lbMaHoaDon_CTHD.Text, font));
-                    document.Add(new Paragraph(lbNgayBan_CTHD.Text, font));
-                    document.Add(new Paragraph(lbTenNhanVien_CTHD.Text, font));
-                    document.Add(new Paragraph(lbTenKhachHang_CTHD.Text, font));
-                    document.Add(new Paragraph(lbDiaChiKhachHang_CTHD.Text, font));
-                    document.Add(new Paragraph(lbSdtKhachHang_CTHD.Text, font));
+                    document.Add(new Paragraph( lbMaHoaDon_CTHD.Text, font));
+                    document.Add(new Paragraph( lbNgayBan_CTHD.Text, font));
+                    document.Add(new Paragraph( lbTenNhanVien_CTHD.Text, font));
+                    document.Add(new Paragraph( lbTenKhachHang_CTHD.Text, font));
+                    document.Add(new Paragraph( lbDiaChiKhachHang_CTHD.Text, font));
+                    document.Add(new Paragraph( lbSdtKhachHang_CTHD.Text, font));
                     document.Add(new Paragraph("\n"));
 
                     // Tạo bảng sản phẩm

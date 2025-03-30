@@ -79,7 +79,7 @@
             this.btnDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDangNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(245, 281);
+            this.btnDangNhap.Location = new System.Drawing.Point(206, 281);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(180, 45);
             this.btnDangNhap.TabIndex = 22;
@@ -156,10 +156,10 @@
             // 
             this.lblDangNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDangNhap.AutoSize = true;
-            this.lblDangNhap.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangNhap.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangNhap.Location = new System.Drawing.Point(238, 21);
             this.lblDangNhap.Name = "lblDangNhap";
-            this.lblDangNhap.Size = new System.Drawing.Size(176, 37);
+            this.lblDangNhap.Size = new System.Drawing.Size(172, 39);
             this.lblDangNhap.TabIndex = 17;
             this.lblDangNhap.Text = "Đăng Nhập";
             // 

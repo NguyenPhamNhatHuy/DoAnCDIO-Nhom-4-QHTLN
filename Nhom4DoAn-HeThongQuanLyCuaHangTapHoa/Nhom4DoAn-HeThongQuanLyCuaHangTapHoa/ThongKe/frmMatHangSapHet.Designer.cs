@@ -187,13 +187,13 @@
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label24.ForeColor = System.Drawing.Color.Black;
-            this.label24.Location = new System.Drawing.Point(393, 29);
+            this.label24.Location = new System.Drawing.Point(520, 15);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(571, 38);
+            this.label24.Size = new System.Drawing.Size(271, 39);
             this.label24.TabIndex = 37;
-            this.label24.Text = "DANH SÁCH MẶT HÀNG SẮP HẾT";
+            this.label24.Text = "Mặt Hàng Sắp Hết";
             // 
             // frmMatHangSapHet
             // 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
 {
-    public partial class frmMatHangSapHet : Form
+    public partial class frmMatHangSapHet: Form
     {
         quanlycuahangtaphoaEntities MHSH = new quanlycuahangtaphoaEntities();
 
@@ -23,7 +23,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
         {
             LoadLowStockItems();
             dgvMHSH.CellClick += new DataGridViewCellEventHandler(dgvMHSH_CellContentClick);
-            txtLoaiHang_MHSH.Text = "";
+            txtLoaiHang_MHSH.Text= "";
             txtSoLuongConLai_MHSH.Text = "";
             txtTenSanPham_MHSH.Text = "";
         }
@@ -110,5 +110,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
         {
             UpdateSelectedItemDetails();
         }
+
+
     }
 }

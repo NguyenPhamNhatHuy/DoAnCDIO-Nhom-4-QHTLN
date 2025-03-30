@@ -40,7 +40,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
         {
             InitializeComponent();
             this.dtpThangban_MHBC.ValueChanged += new System.EventHandler(this.dtpThangban_MHBC_ValueChanged);
-
+          
         }
 
         private void MatHangBanChay_Load(object sender, EventArgs e)
@@ -113,10 +113,10 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
                     .OrderByDescending(p => p.QuantitySold)
                     .ToList();
 
-                // Cập nhật DataSource và refresh DataGridView
-                dgvMHBC.DataSource = null;
-                dgvMHBC.DataSource = bestSellingProducts;
-                dgvMHBC.Refresh();
+                    // Cập nhật DataSource và refresh DataGridView
+                    dgvMHBC.DataSource = null;
+                    dgvMHBC.DataSource = bestSellingProducts;
+                    dgvMHBC.Refresh();
 
                 // Định dạng DataGridView
                 FormatDataGridView();
@@ -211,6 +211,6 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
             UpdateSelectedItemDetails();
         }
 
-
+      
     }
 }

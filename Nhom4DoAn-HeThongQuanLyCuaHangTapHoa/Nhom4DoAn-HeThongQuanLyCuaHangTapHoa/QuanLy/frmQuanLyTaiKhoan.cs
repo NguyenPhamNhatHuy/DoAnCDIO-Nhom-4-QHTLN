@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 {
-    public partial class frmQuanLyTaiKhoan : Form
+    public partial class frmQuanLyTaiKhoan: Form
     {
         quanlycuahangtaphoaEntities TK = new quanlycuahangtaphoaEntities();
         private bool isAdding = false;
@@ -25,7 +25,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             Roles2 = new List<string>() { "All", "Admin", "Nhân Viên" };
         }
 
-        private void ResetValues()
+        private void ResetValues_SP()
         {
             btnLuu_QLTK.Enabled = false;
             btnHuy_QLTK.Enabled = false;
@@ -50,7 +50,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             txtDiaChi_TK.Text = "";
             txtViTri_TK.Text = "";
             txtDienThoai_TK.Text = "";
-
+           
             cboQuyenTK_TK.SelectedIndex = -1;
 
         }
@@ -89,7 +89,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
                 // Chọn giá trị mặc định "All" cho combobox địa chỉ và quyền
                 cboQuyen2_QLTK.SelectedIndex = 0; // All
-
+              
                 // Đặt tiêu đề cho các cột
                 dgvTaiKhoan_QLTK.Columns[0].HeaderText = "Mã TK";
                 dgvTaiKhoan_QLTK.Columns[1].HeaderText = "Tên TK";
@@ -110,7 +110,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            ResetValues();
+            ResetValues_SP();
         }
 
         private void dgvTaiKhoan_QLTK_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -131,13 +131,32 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             txtHoVaTen_TK.Text = dgvTaiKhoan_QLTK.Rows[row].Cells[5].Value + "";
             txtDiaChi_TK.Text = dgvTaiKhoan_QLTK.Rows[row].Cells[6].Value + "";
             txtViTri_TK.Text = dgvTaiKhoan_QLTK.Rows[row].Cells[7].Value + "";
-
+           
 
             // Kích hoạt các nút chức năng
             btnCapNhat_QLTK.Enabled = true;
             btnXoa_QLTK.Enabled = true;
             btnHuy_QLTK.Enabled = true;
         }
+
+        private void frmQuanLyTaiKhoan_Load(object sender, EventArgs e)
+        {
+            // Thiết lập các ComboBox trước khi tải dữ liệu
+            if (cboQuyenTK_TK.DataSource == null)
+                cboQuyenTK_TK.DataSource = Roles1;
+
+            if (cboQuyen2_QLTK.DataSource == null)
+                cboQuyen2_QLTK.DataSource = Roles2;
+
+            // Tải dữ liệu vào DataGridView
+            LoadData();
+
+            txtMaTaiKhoan_TK.ReadOnly = true;
+            cboQuyenTK_TK.SelectedIndex = -1;
+
+            dgvTaiKhoan_QLTK.CellClick += new DataGridViewCellEventHandler(dgvTaiKhoan_QLTK_CellContentClick);
+        }
+       
 
         private void btnThem_QLTK_Click(object sender, EventArgs e)
         {
@@ -175,7 +194,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             user.fullName = txtHoVaTen_TK.Text;
             user.address = txtDiaChi_TK.Text;
             user.position = txtViTri_TK.Text;
-
+           
 
             if (string.IsNullOrEmpty(user.username) || string.IsNullOrEmpty(user.password)
                 || string.IsNullOrEmpty(user.role) || string.IsNullOrEmpty(user.phone)
@@ -207,11 +226,12 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
                     MessageBox.Show("Tên tài khoản đã tồn tại", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
         }
 
         private void btnHuy_QLTK_Click(object sender, EventArgs e)
         {
-            ResetValues();
+            ResetValues_SP();
             // Reset trạng thái thêm
             isAdding = false;
 
@@ -222,6 +242,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             // Đảm bảo nút Cập Nhật bị tắt
             btnCapNhat_QLTK.Enabled = false;
             cboQuyenTK_TK.SelectedIndex = -1;
+
         }
 
         private void btnCapNhat_QLTK_Click(object sender, EventArgs e)
@@ -237,7 +258,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             user.fullName = txtHoVaTen_TK.Text;
             user.address = txtDiaChi_TK.Text;
             user.position = txtViTri_TK.Text;
-
+           
 
             if (string.IsNullOrEmpty(user.username) || string.IsNullOrEmpty(user.password)
                 || string.IsNullOrEmpty(user.role) || string.IsNullOrEmpty(user.fullName)
@@ -253,6 +274,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
                 LoadData();
                 MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
         }
 
         private void btnXoa_QLTK_Click(object sender, EventArgs e)
@@ -290,24 +312,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
                     }
                 }
             }
-        }
 
-        private void frmQuanLyTaiKhoan_Load(object sender, EventArgs e)
-        {
-            // Thiết lập các ComboBox trước khi tải dữ liệu
-            if (cboQuyenTK_TK.DataSource == null)
-                cboQuyenTK_TK.DataSource = Roles1;
-
-            if (cboQuyen2_QLTK.DataSource == null)
-                cboQuyen2_QLTK.DataSource = Roles2;
-
-            // Tải dữ liệu vào DataGridView
-            LoadData();
-
-            txtMaTaiKhoan_TK.ReadOnly = true;
-            cboQuyenTK_TK.SelectedIndex = -1;
-
-            dgvTaiKhoan_QLTK.CellClick += new DataGridViewCellEventHandler(dgvTaiKhoan_QLTK_CellContentClick);
         }
 
         private void cboQuyen2_QLTK_SelectedIndexChanged(object sender, EventArgs e)

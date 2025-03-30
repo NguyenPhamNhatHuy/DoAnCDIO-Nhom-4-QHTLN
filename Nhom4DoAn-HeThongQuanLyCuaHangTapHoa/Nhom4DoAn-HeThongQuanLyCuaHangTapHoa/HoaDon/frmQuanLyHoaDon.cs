@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
 {
-    public partial class frmQuanLyHoaDon : Form
+    public partial class frmQuanLyHoaDon: Form
     {
         int orderIDTemp = -1;
         quanlycuahangtaphoaEntities HD = new quanlycuahangtaphoaEntities();
@@ -33,6 +33,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
             dgvHoaDon_QLHD.Columns[1].HeaderText = "Mã khách hàng";
             dgvHoaDon_QLHD.Columns[2].HeaderText = "Mã nhân viên";
             dgvHoaDon_QLHD.Columns[3].HeaderText = "Ngày lập";
+
             // Đăng ký sự kiện CellClick cho DataGridView
             dgvHoaDon_QLHD.CellClick += new DataGridViewCellEventHandler(dgvHoaDon_QLHD_CellContentClick);
         }
@@ -80,8 +81,8 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
                 createAt = p.createdAt
             }).Where(p => p.createAt >= dtpTuNgay_QLHD.Value && p.createAt <= dtpDenNgay_QLHD.Value);
             dgvHoaDon_QLHD.DataSource = result.ToList();
-            // Ẩn GroupBox nếu không có dữ liệu
-            clearGroupBox();
+                // Ẩn GroupBox nếu không có dữ liệu
+                clearGroupBox();
         }
 
         private void frmQuanLyHoaDon_Load(object sender, EventArgs e)
@@ -113,7 +114,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon
 
             btnXemChiTiet_QLHD.Enabled = true;
         }
-
+       
         private void dtpTuNgay_QLHD_ValueChanged(object sender, EventArgs e)
         {
             clearGroupBox();

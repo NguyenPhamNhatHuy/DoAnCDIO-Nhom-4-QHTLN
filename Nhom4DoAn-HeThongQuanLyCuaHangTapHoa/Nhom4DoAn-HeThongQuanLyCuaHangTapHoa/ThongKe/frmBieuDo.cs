@@ -106,10 +106,5 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
         {
             LoadData();
         }
-
-        private void cboChinhNamDT_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

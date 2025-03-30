@@ -200,11 +200,11 @@
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label37.ForeColor = System.Drawing.Color.Black;
-            this.label37.Location = new System.Drawing.Point(566, 23);
+            this.label37.Location = new System.Drawing.Point(569, 16);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(211, 37);
+            this.label37.Size = new System.Drawing.Size(168, 39);
             this.label37.TabIndex = 46;
-            this.label37.Text = "DOANH THU";
+            this.label37.Text = "Doanh Thu";
             // 
             // tableLayoutPanel1
             // 

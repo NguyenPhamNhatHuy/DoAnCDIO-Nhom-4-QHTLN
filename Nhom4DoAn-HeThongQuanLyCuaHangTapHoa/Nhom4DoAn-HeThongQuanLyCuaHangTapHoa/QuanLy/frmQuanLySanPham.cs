@@ -3,12 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 {
@@ -16,12 +18,10 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
     {
         quanlycuahangtaphoaEntities SP = new quanlycuahangtaphoaEntities();
         private bool isAdding = false;
-
         public frmQuanLySanPham()
         {
             InitializeComponent();
         }
-
         // reset giá trị cho các mục 
         private void ResetValues_SP()
         {
@@ -48,16 +48,14 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
         void loadData()
         {
-            var result = from c in SP.Products
-                         select new
-                         {
-                             ID = c.productID,
-                             tensp = c.name,
-                             loai = c.Category.name,
-                             soluong = c.stockOnHand,
-                             dongia = c.price,
-                             hinhanh = c.imagePath
-                         };
+            var result = from c in SP.Products select new {
+                ID = c.productID,
+                tensp = c.name,
+                loai = c.Category.name,
+                soluong = c.stockOnHand,
+                dongia = c.price,
+                hinhanh = c.imagePath
+            };
 
             dgvSanPham_QLSP.DataSource = result.ToList();
             dgvSanPham_QLSP.Columns[0].HeaderText = "ID";
@@ -97,7 +95,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             ResetValues_SP();
         }
 
-        private void btnThem_QLSP_Click(object sender, EventArgs e)
+        private void btnThem_QLDM_Click(object sender, EventArgs e)
         {
             // Đặt chế độ thêm
             isAdding = true;
@@ -127,69 +125,6 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
             // Đặt focus vào ô tên sản phẩm
             txtTenSanPham_QLSP.Focus();
-        }
-
-        private void dgvSanPham_QLSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int d = e.RowIndex;
-            try
-            {
-                // Kiểm tra nếu đang ở chế độ thêm
-                if (isAdding)
-                {
-                    MessageBox.Show("Bạn không thể chọn khi đang ở chế độ thêm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                // Lấy dữ liệu từ DataGridView và hiển thị lên các TextBox
-                txtTenSanPham_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["tensp"].Value?.ToString();
-                cboLoaiHang_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["loai"].Value?.ToString();
-                txtSoLuong_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["soluong"].Value?.ToString();
-                txtDonGia_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["dongia"].Value?.ToString();
-
-                // Lấy đường dẫn ảnh
-                string imagePath = dgvSanPham_QLSP.Rows[d].Cells["hinhanh"].Value?.ToString();
-                txtLinkAnh_QLSP.Text = imagePath;
-
-                // Hiển thị ảnh từ đường dẫn
-                try
-                {
-                    if (!string.IsNullOrEmpty(imagePath) && System.IO.File.Exists(imagePath))
-                    {
-                        picAnh_QLSP.Image = Image.FromFile(imagePath);
-                    }
-                    else
-                    {
-                        picAnh_QLSP.Image = null;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Load ảnh thất bại: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    picAnh_QLSP.Image = null;
-                }
-
-                // Lấy ID sản phẩm để sử dụng cho thao tác cập nhật hoặc xóa
-                int productID = Convert.ToInt32(dgvSanPham_QLSP.Rows[d].Cells["ID"].Value);
-
-                // Lấy thông tin category từ datagridview
-                string categoryName = dgvSanPham_QLSP.Rows[d].Cells["loai"].Value.ToString();
-
-                // Tìm categoryID từ tên category
-                var category = SP.Categories.FirstOrDefault(c => c.name == categoryName);
-                if (category != null)
-                {
-                    cboLoaiHang_QLSP.SelectedValue = category.categoryID;
-                }
-
-                // Kích hoạt các nút chức năng
-                btnCapNhat_QLSP.Enabled = true;
-                btnXoa_QLSP.Enabled = true;
-                btnHuy_QLSP.Enabled = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Đã xảy ra lỗi khi hiển thị dữ liệu: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void btnLuu_QLSP_Click(object sender, EventArgs e)
@@ -288,7 +223,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             btnCapNhat_QLSP.Enabled = false;
         }
 
-        private void btnCapNhat_QLSP_Click(object sender, EventArgs e)
+        private void btnCapNhat_QLDM_Click(object sender, EventArgs e)
         {
             int a;
             try
@@ -360,7 +295,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             }
         }
 
-        private void btnXoa_QLSP_Click(object sender, EventArgs e)
+        private void btnXoa_QLDM_Click(object sender, EventArgs e)
         {
             try
             {
@@ -411,6 +346,221 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             {
                 MessageBox.Show("Có lỗi: " + ex.Message, "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void frmQuanLySanPham_Load(object sender, EventArgs e)
+        {
+            loadData();
+            ResetValues_SP();
+
+            try
+            {
+          
+                var resultLoai = (from c in SP.Categories select c).ToList();
+
+                Category allCategory = new Category { categoryID = 0, name = "All" };
+                resultLoai.Insert(0, allCategory);
+
+                // Đổ dữ liệu vào ComboBox
+                cboLoaiHang_QLSP.DataSource = resultLoai;
+                cboLoaiHang_QLSP.DisplayMember = "name";
+                cboLoaiHang_QLSP.ValueMember = "categoryID";
+
+                // Đặt mặc định chọn "All"
+                cboLoaiHang_QLSP.SelectedIndex = 0;
+
+                // Hiển thị tất cả sản phẩm lúc load form
+                timkiemsanpham();
+
+                // Đăng ký sự kiện CellClick cho DataGridView
+                dgvSanPham_QLSP.CellClick += new DataGridViewCellEventHandler(dgvSanPham_QLSP_CellContentClick);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải loại hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnExport_QLDM_Click(object sender, EventArgs e)
+        {
+            if (dgvSanPham_QLSP.Rows.Count > 0)
+            {
+                try
+                {
+                    // Khởi tạo Excel
+                    Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
+                    excelApp.Application.Workbooks.Add(Type.Missing);
+
+                    // Xuất tiêu đề cột
+                    for (int i = 1; i <= dgvSanPham_QLSP.Columns.Count; i++)
+                    {
+                        excelApp.Cells[1, i] = dgvSanPham_QLSP.Columns[i - 1].HeaderText;
+                    }
+
+                    // Xuất dữ liệu từ DataGridView
+                    for (int i = 0; i < dgvSanPham_QLSP.Rows.Count; i++)
+                    {
+                        for (int j = 0; j < dgvSanPham_QLSP.Columns.Count; j++)
+                        {
+                            var cellValue = dgvSanPham_QLSP.Rows[i].Cells[j].Value;
+                            excelApp.Cells[i + 2, j + 1] = cellValue != null ? cellValue.ToString() : string.Empty;
+                        }
+                    }
+
+                    // Tự động căn chỉnh độ rộng cột
+                    excelApp.Columns.AutoFit();
+                    excelApp.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Xuất dữ liệu thất bại: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không có dữ liệu để xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dgvSanPham_QLSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int d = e.RowIndex;
+            try
+            {
+                // Kiểm tra nếu đang ở chế độ thêm
+                if (isAdding)
+                {
+                    MessageBox.Show("Bạn không thể chọn khi đang ở chế độ thêm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                // Lấy dữ liệu từ DataGridView và hiển thị lên các TextBox
+                txtTenSanPham_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["tensp"].Value?.ToString();
+                cboLoaiHang_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["loai"].Value?.ToString();
+                txtSoLuong_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["soluong"].Value?.ToString();
+                txtDonGia_QLSP.Text = dgvSanPham_QLSP.Rows[d].Cells["dongia"].Value?.ToString();
+
+                // Lấy đường dẫn ảnh
+                string imagePath = dgvSanPham_QLSP.Rows[d].Cells["hinhanh"].Value?.ToString();
+                txtLinkAnh_QLSP.Text = imagePath;
+
+                // Hiển thị ảnh từ đường dẫn
+                try
+                {
+                    if (!string.IsNullOrEmpty(imagePath) && System.IO.File.Exists(imagePath))
+                    {
+                        picAnh_QLSP.Image = Image.FromFile(imagePath);
+                    }
+                    else
+                    {
+                        picAnh_QLSP.Image = null;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Load ảnh thất bại: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    picAnh_QLSP.Image = null;
+                }
+
+                // Lấy ID sản phẩm để sử dụng cho thao tác cập nhật hoặc xóa
+                int productID = Convert.ToInt32(dgvSanPham_QLSP.Rows[d].Cells["ID"].Value);
+
+                // Lấy thông tin category từ datagridview
+                string categoryName = dgvSanPham_QLSP.Rows[d].Cells["loai"].Value.ToString();
+
+                // Tìm categoryID từ tên category
+                var category = SP.Categories.FirstOrDefault(c => c.name == categoryName);
+                if (category != null)
+                {
+                    cboLoaiHang_QLSP.SelectedValue = category.categoryID;
+                }
+
+                // Kích hoạt các nút chức năng
+                btnCapNhat_QLSP.Enabled = true;
+                btnXoa_QLSP.Enabled = true;
+                btnHuy_QLSP.Enabled = true; 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi hiển thị dữ liệu: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnChonAnh_QLSP_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+                ofd.Title = "Chọn hình minh họa";  // Thêm tiêu đề
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    txtLinkAnh_QLSP.Text = ofd.FileName;
+                    picAnh_QLSP.Image = Image.FromFile(ofd.FileName); // Hiển thị ảnh trong PictureBox
+                }
+            }
+        }
+
+        void timkiemsanpham()
+        {
+            try
+            {
+                // Nếu chưa chọn loại hàng, hiển thị toàn bộ sản phẩm
+                if (cboLoaiHang_QLSP.SelectedIndex == -1 || cboLoaiHang_QLSP.Text == "All")
+                {
+                    var allProducts = from c in SP.Products
+                                      select new
+                                      {
+                                          ID = c.productID,
+                                          tensp = c.name,
+                                          loai = c.Category.name,
+                                          soluong = c.stockOnHand,
+                                          dongia = c.price,
+                                          hinhanh = c.imagePath
+                                      };
+
+                    dgvSanPham_QLSP.DataSource = allProducts.ToList();
+                }
+                else
+                {
+                    // Nếu đã chọn loại hàng, hiển thị theo loại đã chọn
+                    string selectedCategory = cboLoaiHang_QLSP.Text.Trim();
+
+                    var result = from c in SP.Products
+                                 where c.Category.name.Equals(selectedCategory)
+                                 select new
+                                 {
+                                     ID = c.productID,
+                                     tensp = c.name,
+                                     loai = c.Category.name,
+                                     soluong = c.stockOnHand,
+                                     dongia = c.price,
+                                     hinhanh = c.imagePath
+                                 };
+
+                    dgvSanPham_QLSP.DataSource = result.ToList();
+                }
+
+                // Thiết lập tiêu đề cột
+                dgvSanPham_QLSP.Columns[0].HeaderText = "ID";
+                dgvSanPham_QLSP.Columns[1].HeaderText = "Tên Hàng";
+                dgvSanPham_QLSP.Columns[2].HeaderText = "Loại Hàng";
+                dgvSanPham_QLSP.Columns[3].HeaderText = "Số Lượng";
+                dgvSanPham_QLSP.Columns[4].HeaderText = "Đơn Giá";
+                dgvSanPham_QLSP.Columns[5].HeaderText = "Hình Ảnh";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi trong quá trình tìm kiếm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnTimKiem_QLSP_Click(object sender, EventArgs e)
+        {
+            timkiemsanpham();
+        }
+
+        private void cboLoaiHang_QLSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btnImport_QLSP_Click(object sender, EventArgs e)
@@ -498,151 +648,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
             loadData();
         }
-
-        private void btnExport_QLSP_Click(object sender, EventArgs e)
-        {
-            if (dgvSanPham_QLSP.Rows.Count > 0)
-            {
-                try
-                {
-                    // Khởi tạo Excel
-                    Microsoft.Office.Interop.Excel.Application excelApp = new Microsoft.Office.Interop.Excel.Application();
-                    excelApp.Application.Workbooks.Add(Type.Missing);
-
-                    // Xuất tiêu đề cột
-                    for (int i = 1; i <= dgvSanPham_QLSP.Columns.Count; i++)
-                    {
-                        excelApp.Cells[1, i] = dgvSanPham_QLSP.Columns[i - 1].HeaderText;
-                    }
-
-                    // Xuất dữ liệu từ DataGridView
-                    for (int i = 0; i < dgvSanPham_QLSP.Rows.Count; i++)
-                    {
-                        for (int j = 0; j < dgvSanPham_QLSP.Columns.Count; j++)
-                        {
-                            var cellValue = dgvSanPham_QLSP.Rows[i].Cells[j].Value;
-                            excelApp.Cells[i + 2, j + 1] = cellValue != null ? cellValue.ToString() : string.Empty;
-                        }
-                    }
-
-                    // Tự động căn chỉnh độ rộng cột
-                    excelApp.Columns.AutoFit();
-                    excelApp.Visible = true;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Xuất dữ liệu thất bại: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Không có dữ liệu để xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
-        private void btnChonAnh_QLSP_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-                ofd.Title = "Chọn hình minh họa";  // Thêm tiêu đề
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    txtLinkAnh_QLSP.Text = ofd.FileName;
-                    picAnh_QLSP.Image = Image.FromFile(ofd.FileName); // Hiển thị ảnh trong PictureBox
-                }
-            }
-        }
-
-        void timkiemsanpham()
-        {
-            try
-            {
-                // Nếu chưa chọn loại hàng, hiển thị toàn bộ sản phẩm
-                if (cboLoaiHang_QLSP.SelectedIndex == -1 || cboLoaiHang_QLSP.Text == "All")
-                {
-                    var allProducts = from c in SP.Products
-                                      select new
-                                      {
-                                          ID = c.productID,
-                                          tensp = c.name,
-                                          loai = c.Category.name,
-                                          soluong = c.stockOnHand,
-                                          dongia = c.price,
-                                          hinhanh = c.imagePath
-                                      };
-
-                    dgvSanPham_QLSP.DataSource = allProducts.ToList();
-                }
-                else
-                {
-                    // Nếu đã chọn loại hàng, hiển thị theo loại đã chọn
-                    string selectedCategory = cboLoaiHang_QLSP.Text.Trim();
-
-                    var result = from c in SP.Products
-                                 where c.Category.name.Equals(selectedCategory)
-                                 select new
-                                 {
-                                     ID = c.productID,
-                                     tensp = c.name,
-                                     loai = c.Category.name,
-                                     soluong = c.stockOnHand,
-                                     dongia = c.price,
-                                     hinhanh = c.imagePath
-                                 };
-
-                    dgvSanPham_QLSP.DataSource = result.ToList();
-                }
-
-                // Thiết lập tiêu đề cột
-                dgvSanPham_QLSP.Columns[0].HeaderText = "ID";
-                dgvSanPham_QLSP.Columns[1].HeaderText = "Tên Hàng";
-                dgvSanPham_QLSP.Columns[2].HeaderText = "Loại Hàng";
-                dgvSanPham_QLSP.Columns[3].HeaderText = "Số Lượng";
-                dgvSanPham_QLSP.Columns[4].HeaderText = "Đơn Giá";
-                dgvSanPham_QLSP.Columns[5].HeaderText = "Hình Ảnh";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Có lỗi trong quá trình tìm kiếm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void btnTimKiem_QLSP_Click(object sender, EventArgs e)
-        {
-            timkiemsanpham();
-        }
-
-        private void frmQuanLySanPham_Load(object sender, EventArgs e)
-        {
-            loadData();
-            ResetValues_SP();
-
-            try
-            {
-
-                var resultLoai = (from c in SP.Categories select c).ToList();
-
-                Category allCategory = new Category { categoryID = 0, name = "All" };
-                resultLoai.Insert(0, allCategory);
-
-                // Đổ dữ liệu vào ComboBox
-                cboLoaiHang_QLSP.DataSource = resultLoai;
-                cboLoaiHang_QLSP.DisplayMember = "name";
-                cboLoaiHang_QLSP.ValueMember = "categoryID";
-
-                // Đặt mặc định chọn "All"
-                cboLoaiHang_QLSP.SelectedIndex = 0;
-
-                // Hiển thị tất cả sản phẩm lúc load form
-                timkiemsanpham();
-
-                // Đăng ký sự kiện CellClick cho DataGridView
-                dgvSanPham_QLSP.CellClick += new DataGridViewCellEventHandler(dgvSanPham_QLSP_CellContentClick);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi tải loại hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
     }
 }
+
+

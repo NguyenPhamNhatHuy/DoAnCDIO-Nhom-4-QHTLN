@@ -30,7 +30,6 @@
         {
             this.btnDong_CNTTKH = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapNhat_CNTTKH = new Guna.UI2.WinForms.Guna2Button();
-            this.lblHeading = new System.Windows.Forms.Label();
             this.txtMaKH_CNTTKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSoDienThoai_CNTTKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtHoTen_CNTTKH = new Guna.UI2.WinForms.Guna2TextBox();
@@ -39,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDong_CNTTKH
@@ -50,7 +50,7 @@
             this.btnDong_CNTTKH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDong_CNTTKH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDong_CNTTKH.ForeColor = System.Drawing.Color.White;
-            this.btnDong_CNTTKH.Location = new System.Drawing.Point(324, 331);
+            this.btnDong_CNTTKH.Location = new System.Drawing.Point(339, 331);
             this.btnDong_CNTTKH.Name = "btnDong_CNTTKH";
             this.btnDong_CNTTKH.Size = new System.Drawing.Size(156, 45);
             this.btnDong_CNTTKH.TabIndex = 32;
@@ -73,16 +73,6 @@
             this.btnCapNhat_CNTTKH.Text = "Cập Nhật";
             this.btnCapNhat_CNTTKH.Click += new System.EventHandler(this.btnCapNhat_CNTTKH_Click);
             // 
-            // lblHeading
-            // 
-            this.lblHeading.AutoSize = true;
-            this.lblHeading.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeading.Location = new System.Drawing.Point(30, 9);
-            this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(450, 37);
-            this.lblHeading.TabIndex = 22;
-            this.lblHeading.Text = "Cập nhật thông tin khách hàng";
-            // 
             // txtMaKH_CNTTKH
             // 
             this.txtMaKH_CNTTKH.BorderRadius = 15;
@@ -95,7 +85,7 @@
             this.txtMaKH_CNTTKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaKH_CNTTKH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKH_CNTTKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaKH_CNTTKH.Location = new System.Drawing.Point(213, 79);
+            this.txtMaKH_CNTTKH.Location = new System.Drawing.Point(228, 79);
             this.txtMaKH_CNTTKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaKH_CNTTKH.Name = "txtMaKH_CNTTKH";
             this.txtMaKH_CNTTKH.PlaceholderText = "";
@@ -115,7 +105,7 @@
             this.txtSoDienThoai_CNTTKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoDienThoai_CNTTKH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoDienThoai_CNTTKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoDienThoai_CNTTKH.Location = new System.Drawing.Point(213, 135);
+            this.txtSoDienThoai_CNTTKH.Location = new System.Drawing.Point(228, 135);
             this.txtSoDienThoai_CNTTKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoDienThoai_CNTTKH.Name = "txtSoDienThoai_CNTTKH";
             this.txtSoDienThoai_CNTTKH.PlaceholderText = "";
@@ -135,7 +125,7 @@
             this.txtHoTen_CNTTKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHoTen_CNTTKH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen_CNTTKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoTen_CNTTKH.Location = new System.Drawing.Point(213, 191);
+            this.txtHoTen_CNTTKH.Location = new System.Drawing.Point(228, 191);
             this.txtHoTen_CNTTKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHoTen_CNTTKH.Name = "txtHoTen_CNTTKH";
             this.txtHoTen_CNTTKH.PlaceholderText = "";
@@ -155,7 +145,7 @@
             this.txtDiaChi_CNTTKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChi_CNTTKH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi_CNTTKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiaChi_CNTTKH.Location = new System.Drawing.Point(213, 247);
+            this.txtDiaChi_CNTTKH.Location = new System.Drawing.Point(228, 247);
             this.txtDiaChi_CNTTKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiaChi_CNTTKH.Name = "txtDiaChi_CNTTKH";
             this.txtDiaChi_CNTTKH.PlaceholderText = "";
@@ -207,11 +197,22 @@
             this.label4.TabIndex = 37;
             this.label4.Text = "Mã KH:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(479, 39);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Cập nhật thông tin khách hàng";
+            // 
             // frmCapNhatThongTinKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 388);
+            this.ClientSize = new System.Drawing.Size(539, 388);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -222,7 +223,6 @@
             this.Controls.Add(this.txtMaKH_CNTTKH);
             this.Controls.Add(this.btnDong_CNTTKH);
             this.Controls.Add(this.btnCapNhat_CNTTKH);
-            this.Controls.Add(this.lblHeading);
             this.Name = "frmCapNhatThongTinKH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmCapNhatThongKH_Load);
@@ -235,7 +235,6 @@
 
         private Guna.UI2.WinForms.Guna2Button btnDong_CNTTKH;
         private Guna.UI2.WinForms.Guna2Button btnCapNhat_CNTTKH;
-        private System.Windows.Forms.Label lblHeading;
         private Guna.UI2.WinForms.Guna2TextBox txtMaKH_CNTTKH;
         private Guna.UI2.WinForms.Guna2TextBox txtSoDienThoai_CNTTKH;
         private Guna.UI2.WinForms.Guna2TextBox txtHoTen_CNTTKH;
@@ -244,5 +243,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

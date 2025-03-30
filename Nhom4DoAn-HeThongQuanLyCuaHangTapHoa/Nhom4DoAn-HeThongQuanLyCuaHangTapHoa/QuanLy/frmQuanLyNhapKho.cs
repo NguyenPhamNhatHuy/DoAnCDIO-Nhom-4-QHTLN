@@ -11,17 +11,17 @@ using System.Windows.Forms;
 
 namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 {
-    public partial class frmQuanLyNhapKho : Form
+    public partial class frmQuanLyNhapKho: Form
     {
         // Khai báo
         quanlycuahangtaphoaEntities NK = new quanlycuahangtaphoaEntities();
         private bool isAdding = false;
-
         public frmQuanLyNhapKho()
         {
             InitializeComponent();
         }
-        private void ResetValues()
+
+        private void ResetValues_SP()
         {
             txtSoLuong_QLNK.Text = "";
             cboNhaCungCap_QLNK.SelectedIndex = -1;
@@ -29,7 +29,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
             btnLuu_QLNK.Enabled = false;
             btnHuy_QLNK.Enabled = false;
-
+           
             btnThem_QLNK.Enabled = true;
             btnImport_QLNK.Enabled = true;
             btnExport_QLNK.Enabled = true;
@@ -39,14 +39,13 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
         }
         void LoadData()
         {
-            var result = from c in NK.StockIns
-                         select new
-                         {
-                             IDNCC = c.supplierID,
-                             IDSP = c.productID,
-                             soluong = c.quantity,
-                             createAt = c.createdAt
-                         };
+
+            var result = from c in NK.StockIns select new { 
+                IDNCC = c.supplierID, 
+                IDSP = c.productID, 
+                soluong = c.quantity, 
+                createAt = c.createdAt
+            };
             dgvNhapKho_QLNK.DataSource = result.ToList();
             dgvNhapKho_QLNK.Columns[0].HeaderText = "Mã nhà cung cấp";
             dgvNhapKho_QLNK.Columns[1].HeaderText = "Mã hàng";
@@ -55,9 +54,9 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
             txtSoLuong_QLNK.Clear();
 
-            ResetValues();
+            ResetValues_SP();
 
-            dgvNhapKho_QLNK.CellClick += new DataGridViewCellEventHandler(dgvNhapKho_QLNK_CellContentClick);
+            dgvNhapKho_QLNK.CellClick += new DataGridViewCellEventHandler(dgvNhapKho_QLNK_CellContentClick);         
         }
         void addStockIn()
         {
@@ -68,11 +67,10 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
                 StockIn stThem = NK.StockIns.Find(idSpThem, idNCCThem);
                 if (stThem == null)
                 {
-                    StockIn st = new StockIn()
-                    {
-                        productID = idSpThem,
-                        supplierID = Convert.ToInt32(cboNhaCungCap_QLNK.SelectedValue),
-                        quantity = Convert.ToInt32(txtSoLuong_QLNK.Text),
+                    StockIn st = new StockIn() { 
+                        productID = idSpThem, 
+                        supplierID = Convert.ToInt32(cboNhaCungCap_QLNK.SelectedValue), 
+                        quantity = Convert.ToInt32(txtSoLuong_QLNK.Text), 
                         createdAt = DateTime.Now,
                     };
                     NK.StockIns.Add(st);
@@ -119,6 +117,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
         private void btnLuu_QLNK_Click(object sender, EventArgs e)
         {
+
             int a;
             if (string.IsNullOrWhiteSpace(txtSoLuong_QLNK.Text))
             {
@@ -138,19 +137,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
 
         private void btnHuy_QLNK_Click(object sender, EventArgs e)
         {
-            ResetValues();
-            // Reset trạng thái thêm
-            isAdding = false;
-
-            // nếu đang ở chế độ thêm
-            if (btnThem_QLNK.Enabled == false)
-                lblThem_QLNK.Text = "";
-            btnThem_QLNK.Enabled = true;
-        }
-
-        private void btnHuy_QLNK_Click_1(object sender, EventArgs e)
-        {
-            ResetValues();
+            ResetValues_SP();
             // Reset trạng thái thêm
             isAdding = false;
 
@@ -269,7 +256,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             cboMatHang_QLNK.SelectedIndex = -1;
 
             LoadData();
-            ResetValues();
+            ResetValues_SP();
 
             var resultNCC = from c in NK.Suppliers select c;
             cboNhaCungCap_QLNK.DataSource = resultNCC.ToList();
@@ -286,11 +273,11 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
             // Kiểm tra nếu đang ở chế độ thêm
             if (isAdding)
             {
-                MessageBox.Show("Bạn không thể chọn danh mục trong khi đang ở chế độ thêm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn không thể chọn khi đang ở chế độ thêm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             int d = e.RowIndex;
-
+            
             // Lấy dữ liệu từ DataGridView và hiển thị lên các TextBox
             cboMatHang_QLNK.SelectedValue = Convert.ToInt32(dgvNhapKho_QLNK.Rows[d].Cells[1].Value.ToString());
             cboNhaCungCap_QLNK.SelectedValue = Convert.ToInt32(dgvNhapKho_QLNK.Rows[d].Cells[0].Value.ToString());
@@ -298,3 +285,4 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy
         }
     }
 }
+

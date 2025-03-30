@@ -63,7 +63,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.72716F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1282, 853);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
             // panel2
             // 
@@ -181,9 +181,9 @@
             this.label1.Location = new System.Drawing.Point(526, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(80, 10, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 37);
+            this.label1.Size = new System.Drawing.Size(251, 37);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Chi tiết hóa đơn";
+            this.label1.Text = "Chi Tiết Hóa Đơn";
             // 
             // lbMaHoaDon_CTHD
             // 
@@ -242,7 +242,7 @@
             this.ClientSize = new System.Drawing.Size(1282, 853);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmChiTietHoaDon";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmChiTietHoaDon_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -257,7 +257,6 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbTongTien_CTHD;
         private System.Windows.Forms.Label lbNgayBan_CTHD;
         private System.Windows.Forms.Label lbTenKhachHang_CTHD;
         private System.Windows.Forms.Label lbDiaChiKhachHang_CTHD;
@@ -266,6 +265,7 @@
         private System.Windows.Forms.Label lbMaNhanVien_CTHD;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbMaHoaDon_CTHD;
+        private System.Windows.Forms.Label lbTongTien_CTHD;
         private System.Windows.Forms.DataGridView dgvDanhSachSp_CTHD;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnIn_CTHD;

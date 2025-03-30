@@ -29,24 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
-            this.txtTimKiem_NV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.grbCheckSDTKhachHang_NV = new System.Windows.Forms.GroupBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnKiemTraSdt_NV = new Guna.UI2.WinForms.Guna2Button();
-            this.txtCheckSdt_NV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.grbThongTinKhachHang_NV = new System.Windows.Forms.GroupBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnThem_NV = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSua_NV = new Guna.UI2.WinForms.Guna2Button();
-            this.txtSDT_NV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtDiaChi_NV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTen_NV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvGioHang_NV = new System.Windows.Forms.DataGridView();
             this.grbChiTietSanPham_NV = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblSoLuong_NV = new System.Windows.Forms.Label();
@@ -69,14 +51,38 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvSanPham_NV = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTimKiem_NV = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboDanhMuc_NV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.grbCheckSDTKhachHang_NV = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnKiemTraSdt_NV = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCheckSdt_NV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.grbThongTinKhachHang_NV = new System.Windows.Forms.GroupBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnThem_NV = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSua_NV = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSDT_NV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDiaChi_NV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTen_NV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvGioHang_NV = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lbTongTien_NV = new System.Windows.Forms.Label();
             this.btnThanhToan_NV = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDangXuat_NV = new Guna.UI2.WinForms.Guna2Button();
+            this.grbChiTietSanPham_NV.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham_NV)).BeginInit();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.grbCheckSDTKhachHang_NV.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -84,308 +90,8 @@
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGioHang_NV)).BeginInit();
-            this.grbChiTietSanPham_NV.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham_NV)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtTimKiem_NV
-            // 
-            this.txtTimKiem_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTimKiem_NV.BorderRadius = 15;
-            this.txtTimKiem_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimKiem_NV.DefaultText = "";
-            this.txtTimKiem_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTimKiem_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTimKiem_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTimKiem_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTimKiem_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKiem_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTimKiem_NV.Location = new System.Drawing.Point(23, 50);
-            this.txtTimKiem_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTimKiem_NV.Name = "txtTimKiem_NV";
-            this.txtTimKiem_NV.PlaceholderText = "";
-            this.txtTimKiem_NV.SelectedText = "";
-            this.txtTimKiem_NV.Size = new System.Drawing.Size(330, 36);
-            this.txtTimKiem_NV.TabIndex = 15;
-            this.txtTimKiem_NV.TextChanged += new System.EventHandler(this.txtTimKiem_NV_TextChanged);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.grbCheckSDTKhachHang_NV, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.grbThongTinKhachHang_NV, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.grbChiTietSanPham_NV, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel6, 1, 3);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 45);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.18903F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.04762F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1308, 693);
-            this.tableLayoutPanel1.TabIndex = 18;
-            // 
-            // grbCheckSDTKhachHang_NV
-            // 
-            this.grbCheckSDTKhachHang_NV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grbCheckSDTKhachHang_NV.Controls.Add(this.panel4);
-            this.grbCheckSDTKhachHang_NV.Location = new System.Drawing.Point(918, 3);
-            this.grbCheckSDTKhachHang_NV.Name = "grbCheckSDTKhachHang_NV";
-            this.grbCheckSDTKhachHang_NV.Size = new System.Drawing.Size(387, 97);
-            this.grbCheckSDTKhachHang_NV.TabIndex = 14;
-            this.grbCheckSDTKhachHang_NV.TabStop = false;
-            this.grbCheckSDTKhachHang_NV.Text = "SĐT khách hàng";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnKiemTraSdt_NV);
-            this.panel4.Controls.Add(this.txtCheckSdt_NV);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 18);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(381, 76);
-            this.panel4.TabIndex = 0;
-            // 
-            // btnKiemTraSdt_NV
-            // 
-            this.btnKiemTraSdt_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnKiemTraSdt_NV.BorderRadius = 15;
-            this.btnKiemTraSdt_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnKiemTraSdt_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnKiemTraSdt_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnKiemTraSdt_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnKiemTraSdt_NV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKiemTraSdt_NV.ForeColor = System.Drawing.Color.White;
-            this.btnKiemTraSdt_NV.Location = new System.Drawing.Point(247, 9);
-            this.btnKiemTraSdt_NV.Name = "btnKiemTraSdt_NV";
-            this.btnKiemTraSdt_NV.Size = new System.Drawing.Size(126, 58);
-            this.btnKiemTraSdt_NV.TabIndex = 14;
-            this.btnKiemTraSdt_NV.Text = "Kiểm Tra";
-            this.btnKiemTraSdt_NV.Click += new System.EventHandler(this.btnKiemTraSdt_NV_Click);
-            // 
-            // txtCheckSdt_NV
-            // 
-            this.txtCheckSdt_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCheckSdt_NV.BorderRadius = 15;
-            this.txtCheckSdt_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCheckSdt_NV.DefaultText = "";
-            this.txtCheckSdt_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCheckSdt_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCheckSdt_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCheckSdt_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCheckSdt_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCheckSdt_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCheckSdt_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCheckSdt_NV.Location = new System.Drawing.Point(14, 10);
-            this.txtCheckSdt_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCheckSdt_NV.Name = "txtCheckSdt_NV";
-            this.txtCheckSdt_NV.PlaceholderText = "";
-            this.txtCheckSdt_NV.SelectedText = "";
-            this.txtCheckSdt_NV.Size = new System.Drawing.Size(221, 57);
-            this.txtCheckSdt_NV.TabIndex = 13;
-            // 
-            // grbThongTinKhachHang_NV
-            // 
-            this.grbThongTinKhachHang_NV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grbThongTinKhachHang_NV.Controls.Add(this.panel3);
-            this.grbThongTinKhachHang_NV.Location = new System.Drawing.Point(918, 106);
-            this.grbThongTinKhachHang_NV.Name = "grbThongTinKhachHang_NV";
-            this.grbThongTinKhachHang_NV.Size = new System.Drawing.Size(387, 222);
-            this.grbThongTinKhachHang_NV.TabIndex = 13;
-            this.grbThongTinKhachHang_NV.TabStop = false;
-            this.grbThongTinKhachHang_NV.Text = "Thông tin khách hàng";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnThem_NV);
-            this.panel3.Controls.Add(this.btnSua_NV);
-            this.panel3.Controls.Add(this.txtSDT_NV);
-            this.panel3.Controls.Add(this.txtDiaChi_NV);
-            this.panel3.Controls.Add(this.txtTen_NV);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 18);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(381, 201);
-            this.panel3.TabIndex = 0;
-            // 
-            // btnThem_NV
-            // 
-            this.btnThem_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThem_NV.BorderRadius = 15;
-            this.btnThem_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnThem_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnThem_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnThem_NV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem_NV.ForeColor = System.Drawing.Color.White;
-            this.btnThem_NV.Location = new System.Drawing.Point(254, 144);
-            this.btnThem_NV.Name = "btnThem_NV";
-            this.btnThem_NV.Size = new System.Drawing.Size(119, 45);
-            this.btnThem_NV.TabIndex = 28;
-            this.btnThem_NV.Text = "Thêm";
-            this.btnThem_NV.Click += new System.EventHandler(this.btnThem_NV_Click);
-            // 
-            // btnSua_NV
-            // 
-            this.btnSua_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSua_NV.BorderRadius = 15;
-            this.btnSua_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSua_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSua_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSua_NV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua_NV.ForeColor = System.Drawing.Color.White;
-            this.btnSua_NV.Location = new System.Drawing.Point(129, 144);
-            this.btnSua_NV.Name = "btnSua_NV";
-            this.btnSua_NV.Size = new System.Drawing.Size(119, 45);
-            this.btnSua_NV.TabIndex = 27;
-            this.btnSua_NV.Text = "Sửa";
-            this.btnSua_NV.Click += new System.EventHandler(this.btnSua_NV_Click);
-            // 
-            // txtSDT_NV
-            // 
-            this.txtSDT_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSDT_NV.BorderRadius = 15;
-            this.txtSDT_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSDT_NV.DefaultText = "";
-            this.txtSDT_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSDT_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSDT_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSDT_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSDT_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSDT_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSDT_NV.Location = new System.Drawing.Point(128, 101);
-            this.txtSDT_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSDT_NV.Name = "txtSDT_NV";
-            this.txtSDT_NV.PlaceholderText = "";
-            this.txtSDT_NV.SelectedText = "";
-            this.txtSDT_NV.Size = new System.Drawing.Size(245, 36);
-            this.txtSDT_NV.TabIndex = 26;
-            // 
-            // txtDiaChi_NV
-            // 
-            this.txtDiaChi_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDiaChi_NV.BorderRadius = 15;
-            this.txtDiaChi_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiaChi_NV.DefaultText = "";
-            this.txtDiaChi_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDiaChi_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDiaChi_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiaChi_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiaChi_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiaChi_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiaChi_NV.Location = new System.Drawing.Point(128, 57);
-            this.txtDiaChi_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDiaChi_NV.Name = "txtDiaChi_NV";
-            this.txtDiaChi_NV.PlaceholderText = "";
-            this.txtDiaChi_NV.SelectedText = "";
-            this.txtDiaChi_NV.Size = new System.Drawing.Size(245, 36);
-            this.txtDiaChi_NV.TabIndex = 25;
-            // 
-            // txtTen_NV
-            // 
-            this.txtTen_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTen_NV.BorderRadius = 15;
-            this.txtTen_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTen_NV.DefaultText = "";
-            this.txtTen_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTen_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTen_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTen_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTen_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTen_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTen_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTen_NV.Location = new System.Drawing.Point(128, 13);
-            this.txtTen_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTen_NV.Name = "txtTen_NV";
-            this.txtTen_NV.PlaceholderText = "";
-            this.txtTen_NV.SelectedText = "";
-            this.txtTen_NV.Size = new System.Drawing.Size(245, 36);
-            this.txtTen_NV.TabIndex = 24;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 22);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "SĐT:";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 22);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Địa chỉ:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 22);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Tên:";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.dgvGioHang_NV);
-            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 334);
-            this.groupBox2.Name = "groupBox2";
-            this.tableLayoutPanel1.SetRowSpan(this.groupBox2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(909, 356);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Giỏ hàng";
-            // 
-            // dgvGioHang_NV
-            // 
-            this.dgvGioHang_NV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvGioHang_NV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGioHang_NV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGioHang_NV.Location = new System.Drawing.Point(3, 18);
-            this.dgvGioHang_NV.Name = "dgvGioHang_NV";
-            this.dgvGioHang_NV.RowHeadersWidth = 51;
-            this.dgvGioHang_NV.RowTemplate.Height = 24;
-            this.dgvGioHang_NV.Size = new System.Drawing.Size(903, 335);
-            this.dgvGioHang_NV.TabIndex = 0;
-            this.dgvGioHang_NV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGioHang_NV_CellContentClick);
             // 
             // grbChiTietSanPham_NV
             // 
@@ -697,6 +403,28 @@
             this.panel1.Size = new System.Drawing.Size(897, 100);
             this.panel1.TabIndex = 1;
             // 
+            // txtTimKiem_NV
+            // 
+            this.txtTimKiem_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTimKiem_NV.BorderRadius = 15;
+            this.txtTimKiem_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTimKiem_NV.DefaultText = "";
+            this.txtTimKiem_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTimKiem_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTimKiem_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTimKiem_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTimKiem_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTimKiem_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTimKiem_NV.Location = new System.Drawing.Point(23, 50);
+            this.txtTimKiem_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTimKiem_NV.Name = "txtTimKiem_NV";
+            this.txtTimKiem_NV.PlaceholderText = "";
+            this.txtTimKiem_NV.SelectedText = "";
+            this.txtTimKiem_NV.Size = new System.Drawing.Size(330, 36);
+            this.txtTimKiem_NV.TabIndex = 15;
+            this.txtTimKiem_NV.TextChanged += new System.EventHandler(this.txtTimKiem_NV_TextChanged);
+            // 
             // cboDanhMuc_NV
             // 
             this.cboDanhMuc_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -713,6 +441,7 @@
             this.cboDanhMuc_NV.Name = "cboDanhMuc_NV";
             this.cboDanhMuc_NV.Size = new System.Drawing.Size(330, 36);
             this.cboDanhMuc_NV.TabIndex = 16;
+            this.cboDanhMuc_NV.SelectedIndexChanged += new System.EventHandler(this.cboDanhMuc_NV_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -735,6 +464,279 @@
             this.label10.Size = new System.Drawing.Size(94, 22);
             this.label10.TabIndex = 14;
             this.label10.Text = "Danh mục:";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.Controls.Add(this.grbCheckSDTKhachHang_NV, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.grbThongTinKhachHang_NV, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.grbChiTietSanPham_NV, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel6, 1, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 43);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.18903F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.04762F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1308, 693);
+            this.tableLayoutPanel1.TabIndex = 12;
+            // 
+            // grbCheckSDTKhachHang_NV
+            // 
+            this.grbCheckSDTKhachHang_NV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbCheckSDTKhachHang_NV.Controls.Add(this.panel4);
+            this.grbCheckSDTKhachHang_NV.Location = new System.Drawing.Point(918, 3);
+            this.grbCheckSDTKhachHang_NV.Name = "grbCheckSDTKhachHang_NV";
+            this.grbCheckSDTKhachHang_NV.Size = new System.Drawing.Size(387, 97);
+            this.grbCheckSDTKhachHang_NV.TabIndex = 14;
+            this.grbCheckSDTKhachHang_NV.TabStop = false;
+            this.grbCheckSDTKhachHang_NV.Text = "SĐT khách hàng";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnKiemTraSdt_NV);
+            this.panel4.Controls.Add(this.txtCheckSdt_NV);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 18);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(381, 76);
+            this.panel4.TabIndex = 0;
+            // 
+            // btnKiemTraSdt_NV
+            // 
+            this.btnKiemTraSdt_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnKiemTraSdt_NV.BorderRadius = 15;
+            this.btnKiemTraSdt_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTraSdt_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKiemTraSdt_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKiemTraSdt_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKiemTraSdt_NV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKiemTraSdt_NV.ForeColor = System.Drawing.Color.White;
+            this.btnKiemTraSdt_NV.Location = new System.Drawing.Point(247, 9);
+            this.btnKiemTraSdt_NV.Name = "btnKiemTraSdt_NV";
+            this.btnKiemTraSdt_NV.Size = new System.Drawing.Size(126, 58);
+            this.btnKiemTraSdt_NV.TabIndex = 14;
+            this.btnKiemTraSdt_NV.Text = "Kiểm Tra";
+            this.btnKiemTraSdt_NV.Click += new System.EventHandler(this.btnKiemTraSdt_NV_Click);
+            // 
+            // txtCheckSdt_NV
+            // 
+            this.txtCheckSdt_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCheckSdt_NV.BorderRadius = 15;
+            this.txtCheckSdt_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCheckSdt_NV.DefaultText = "";
+            this.txtCheckSdt_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCheckSdt_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCheckSdt_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCheckSdt_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCheckSdt_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCheckSdt_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCheckSdt_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCheckSdt_NV.Location = new System.Drawing.Point(14, 10);
+            this.txtCheckSdt_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCheckSdt_NV.Name = "txtCheckSdt_NV";
+            this.txtCheckSdt_NV.PlaceholderText = "";
+            this.txtCheckSdt_NV.SelectedText = "";
+            this.txtCheckSdt_NV.Size = new System.Drawing.Size(221, 57);
+            this.txtCheckSdt_NV.TabIndex = 13;
+            this.txtCheckSdt_NV.TextChanged += new System.EventHandler(this.txtCheckSdt_NV_TextChanged);
+            // 
+            // grbThongTinKhachHang_NV
+            // 
+            this.grbThongTinKhachHang_NV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbThongTinKhachHang_NV.Controls.Add(this.panel3);
+            this.grbThongTinKhachHang_NV.Location = new System.Drawing.Point(918, 106);
+            this.grbThongTinKhachHang_NV.Name = "grbThongTinKhachHang_NV";
+            this.grbThongTinKhachHang_NV.Size = new System.Drawing.Size(387, 222);
+            this.grbThongTinKhachHang_NV.TabIndex = 13;
+            this.grbThongTinKhachHang_NV.TabStop = false;
+            this.grbThongTinKhachHang_NV.Text = "Thông tin khách hàng";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnThem_NV);
+            this.panel3.Controls.Add(this.btnSua_NV);
+            this.panel3.Controls.Add(this.txtSDT_NV);
+            this.panel3.Controls.Add(this.txtDiaChi_NV);
+            this.panel3.Controls.Add(this.txtTen_NV);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 18);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(381, 201);
+            this.panel3.TabIndex = 0;
+            // 
+            // btnThem_NV
+            // 
+            this.btnThem_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThem_NV.BorderRadius = 15;
+            this.btnThem_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnThem_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnThem_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnThem_NV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem_NV.ForeColor = System.Drawing.Color.White;
+            this.btnThem_NV.Location = new System.Drawing.Point(254, 144);
+            this.btnThem_NV.Name = "btnThem_NV";
+            this.btnThem_NV.Size = new System.Drawing.Size(119, 45);
+            this.btnThem_NV.TabIndex = 28;
+            this.btnThem_NV.Text = "Thêm";
+            this.btnThem_NV.Click += new System.EventHandler(this.btnThem_NV_Click);
+            // 
+            // btnSua_NV
+            // 
+            this.btnSua_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSua_NV.BorderRadius = 15;
+            this.btnSua_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSua_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSua_NV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua_NV.ForeColor = System.Drawing.Color.White;
+            this.btnSua_NV.Location = new System.Drawing.Point(129, 144);
+            this.btnSua_NV.Name = "btnSua_NV";
+            this.btnSua_NV.Size = new System.Drawing.Size(119, 45);
+            this.btnSua_NV.TabIndex = 27;
+            this.btnSua_NV.Text = "Sửa";
+            this.btnSua_NV.Click += new System.EventHandler(this.btnSua_NV_Click);
+            // 
+            // txtSDT_NV
+            // 
+            this.txtSDT_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSDT_NV.BorderRadius = 15;
+            this.txtSDT_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSDT_NV.DefaultText = "";
+            this.txtSDT_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSDT_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSDT_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDT_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSDT_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDT_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSDT_NV.Location = new System.Drawing.Point(128, 101);
+            this.txtSDT_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSDT_NV.Name = "txtSDT_NV";
+            this.txtSDT_NV.PlaceholderText = "";
+            this.txtSDT_NV.SelectedText = "";
+            this.txtSDT_NV.Size = new System.Drawing.Size(245, 36);
+            this.txtSDT_NV.TabIndex = 26;
+            // 
+            // txtDiaChi_NV
+            // 
+            this.txtDiaChi_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDiaChi_NV.BorderRadius = 15;
+            this.txtDiaChi_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiaChi_NV.DefaultText = "";
+            this.txtDiaChi_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDiaChi_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDiaChi_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiaChi_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiaChi_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiaChi_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiaChi_NV.Location = new System.Drawing.Point(128, 57);
+            this.txtDiaChi_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDiaChi_NV.Name = "txtDiaChi_NV";
+            this.txtDiaChi_NV.PlaceholderText = "";
+            this.txtDiaChi_NV.SelectedText = "";
+            this.txtDiaChi_NV.Size = new System.Drawing.Size(245, 36);
+            this.txtDiaChi_NV.TabIndex = 25;
+            // 
+            // txtTen_NV
+            // 
+            this.txtTen_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTen_NV.BorderRadius = 15;
+            this.txtTen_NV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTen_NV.DefaultText = "";
+            this.txtTen_NV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTen_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTen_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTen_NV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTen_NV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTen_NV.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTen_NV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTen_NV.Location = new System.Drawing.Point(128, 13);
+            this.txtTen_NV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtTen_NV.Name = "txtTen_NV";
+            this.txtTen_NV.PlaceholderText = "";
+            this.txtTen_NV.SelectedText = "";
+            this.txtTen_NV.Size = new System.Drawing.Size(245, 36);
+            this.txtTen_NV.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 110);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 22);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "SĐT:";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 22);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Địa chỉ:";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(9, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 22);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Tên:";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.dgvGioHang_NV);
+            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(3, 334);
+            this.groupBox2.Name = "groupBox2";
+            this.tableLayoutPanel1.SetRowSpan(this.groupBox2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(909, 356);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Giỏ hàng";
+            // 
+            // dgvGioHang_NV
+            // 
+            this.dgvGioHang_NV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvGioHang_NV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGioHang_NV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGioHang_NV.Location = new System.Drawing.Point(3, 18);
+            this.dgvGioHang_NV.Name = "dgvGioHang_NV";
+            this.dgvGioHang_NV.RowHeadersWidth = 51;
+            this.dgvGioHang_NV.RowTemplate.Height = 24;
+            this.dgvGioHang_NV.Size = new System.Drawing.Size(903, 335);
+            this.dgvGioHang_NV.TabIndex = 0;
+            this.dgvGioHang_NV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGioHang_NV_CellContentClick);
             // 
             // panel6
             // 
@@ -796,10 +798,10 @@
             this.btnDangXuat_NV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat_NV.ForeColor = System.Drawing.Color.White;
             this.btnDangXuat_NV.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat_NV.Image")));
-            this.btnDangXuat_NV.Location = new System.Drawing.Point(24, 4);
+            this.btnDangXuat_NV.Location = new System.Drawing.Point(24, 2);
             this.btnDangXuat_NV.Name = "btnDangXuat_NV";
             this.btnDangXuat_NV.Size = new System.Drawing.Size(80, 38);
-            this.btnDangXuat_NV.TabIndex = 19;
+            this.btnDangXuat_NV.TabIndex = 17;
             this.btnDangXuat_NV.Click += new System.EventHandler(this.btnDangXuat_NV_Click);
             // 
             // frmNhanVien
@@ -807,19 +809,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1313, 742);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnDangXuat_NV);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmNhanVien";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmNhanVien_Load_1);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.grbCheckSDTKhachHang_NV.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.grbThongTinKhachHang_NV.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGioHang_NV)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Nhân Viên";
+            this.Load += new System.EventHandler(this.frmNhanVien_Load);
             this.grbChiTietSanPham_NV.ResumeLayout(false);
             this.grbChiTietSanPham_NV.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -829,6 +825,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham_NV)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.grbCheckSDTKhachHang_NV.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.grbThongTinKhachHang_NV.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGioHang_NV)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.ResumeLayout(false);
@@ -836,31 +840,16 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2TextBox txtTimKiem_NV;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.GroupBox grbCheckSDTKhachHang_NV;
-        private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2Button btnKiemTraSdt_NV;
-        private Guna.UI2.WinForms.Guna2TextBox txtCheckSdt_NV;
-        private System.Windows.Forms.GroupBox grbThongTinKhachHang_NV;
-        private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2Button btnThem_NV;
-        private Guna.UI2.WinForms.Guna2Button btnSua_NV;
-        private Guna.UI2.WinForms.Guna2TextBox txtSDT_NV;
-        private Guna.UI2.WinForms.Guna2TextBox txtDiaChi_NV;
-        private Guna.UI2.WinForms.Guna2TextBox txtTen_NV;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgvGioHang_NV;
         private System.Windows.Forms.GroupBox grbChiTietSanPham_NV;
+        private System.Windows.Forms.Label lblDetailID;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblSoLuong_NV;
-        private System.Windows.Forms.Label lblDonGia_NV;
-        private System.Windows.Forms.Label lblTenSanPham_NV;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lbTongTien_NV;
+        private Guna.UI2.WinForms.Guna2Button btnThanhToan_NV;
+        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtSoLuong_NV;
         private Guna.UI2.WinForms.Guna2Button btnTang_NV;
         private Guna.UI2.WinForms.Guna2Button btnSuDung_NV;
@@ -872,18 +861,32 @@
         private Guna.UI2.WinForms.Guna2Button btnGiam_NV;
         private Guna.UI2.WinForms.Guna2TextBox txtGiamGia_NV;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblDetailID;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSoLuong_NV;
+        private System.Windows.Forms.Label lblDonGia_NV;
+        private System.Windows.Forms.Label lblTenSanPham_NV;
+        private System.Windows.Forms.GroupBox grbThongTinKhachHang_NV;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2TextBox txtSDT_NV;
+        private Guna.UI2.WinForms.Guna2TextBox txtDiaChi_NV;
+        private Guna.UI2.WinForms.Guna2TextBox txtTen_NV;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox grbCheckSDTKhachHang_NV;
+        private System.Windows.Forms.Panel panel4;
+        private Guna.UI2.WinForms.Guna2Button btnKiemTraSdt_NV;
+        private Guna.UI2.WinForms.Guna2TextBox txtCheckSdt_NV;
+        private System.Windows.Forms.DataGridView dgvGioHang_NV;
+        private Guna.UI2.WinForms.Guna2Button btnThem_NV;
+        private Guna.UI2.WinForms.Guna2Button btnSua_NV;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.DataGridView dgvSanPham_NV;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2ComboBox cboDanhMuc_NV;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbTongTien_NV;
-        private Guna.UI2.WinForms.Guna2Button btnThanhToan_NV;
-        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2TextBox txtTimKiem_NV;
+        private Guna.UI2.WinForms.Guna2ComboBox cboDanhMuc_NV;
         private Guna.UI2.WinForms.Guna2Button btnDangXuat_NV;
     }
 }

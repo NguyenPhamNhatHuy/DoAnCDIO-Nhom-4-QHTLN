@@ -108,7 +108,6 @@
             this.cboChinhNamDT.Name = "cboChinhNamDT";
             this.cboChinhNamDT.Size = new System.Drawing.Size(140, 36);
             this.cboChinhNamDT.TabIndex = 0;
-            this.cboChinhNamDT.SelectedIndexChanged += new System.EventHandler(this.cboChinhNamDT_SelectedIndexChanged);
             // 
             // frmBieuDo
             // 

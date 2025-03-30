@@ -15,8 +15,8 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
     public partial class frmNhanVien : Form
     {
         private User user;
-
         public User User { get => user; set => user = value; }
+
         quanlycuahangtaphoaEntities NV = new quanlycuahangtaphoaEntities();
 
         List<ProductInCart> productInCarts = new List<ProductInCart>();
@@ -62,32 +62,6 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
         public frmNhanVien()
         {
             InitializeComponent();
-        }
-
-        private void frmNhanVien_Load(object sender, EventArgs e)
-        {
-            grbThongTinKhachHang_NV.Visible = false;
-            grbChiTietSanPham_NV.Visible = false;
-            dgvGioHang_NV.Visible = false;
-            lblDetailID.Visible = false;
-
-            // Thêm sự kiện CellClick cho datagridview sản phẩm
-            dgvSanPham_NV.CellClick += new DataGridViewCellEventHandler(this.dgvSanPham_NV_CellContentClick);
-            dgvGioHang_NV.CellClick += new DataGridViewCellEventHandler(this.dgvGioHang_NV_CellContentClick);
-
-            setDataDgvProducts();
-
-            var categories = NV.Categories.Select(c => new
-            {
-                name = c.name
-            }).ToList();
-
-            cboDanhMuc_NV.Items.Add("Tất cả");
-            foreach (var category in categories)
-            {
-                cboDanhMuc_NV.Items.Add(category.name);
-            }
-            cboDanhMuc_NV.SelectedIndex = 0;
         }
 
         private long sumOfMoney()
@@ -136,6 +110,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
             setCustomerDetail(customer);
             NV = new quanlycuahangtaphoaEntities();
         }
+
         private void btnSua_NV_Click(object sender, EventArgs e)
         {
             string phone = txtSDT_NV.Text;
@@ -157,14 +132,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
                 MessageBox.Show("Số điện thoại phải có 10 chữ số!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            // Check if the phone number consists of only digits
-            if (!phone.All(char.IsDigit))
-            {
-                MessageBox.Show("Số điện thoại chỉ được phép chứa các chữ số!", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
+            
             getAndSetCusomer(phone);
         }
 
@@ -211,6 +179,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
             txtSDT_NV.ReadOnly = true;
             btnThem_NV.Visible = false;
         }
+
         private void setTitleDgvProducts()
         {
             dgvSanPham_NV.Columns[0].HeaderText = "Mã";
@@ -219,6 +188,7 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
             dgvSanPham_NV.Columns[3].HeaderText = "Giá bán (VNĐ)";
             dgvSanPham_NV.Columns[3].DefaultCellStyle.Format = "#,### vnđ";
         }
+
         private void setDataDgvProducts()
         {
             var products = NV.Products.Select(p => new
@@ -247,6 +217,16 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
             dgvGioHang_NV.Columns[5].HeaderText = "Thành tiền (VNĐ)";
             dgvGioHang_NV.Columns[2].DefaultCellStyle.Format = "#,### vnđ";
             dgvGioHang_NV.Columns[5].DefaultCellStyle.Format = "#,### vnđ";
+        }
+
+        private void dgvSanPham_NV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedProduct(sender, e);
+        }
+
+        private void dgvGioHang_NV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            viewDetailProduct(sender, e);
         }
 
         private void filterProductByCategory(string categoryName)
@@ -574,38 +554,19 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
 
             frmChiTietHoaDon CTHD = new frmChiTietHoaDon();
             CTHD.OrderID = ID;
- 
+          
             CTHD.ShowDialog();
             productInCarts = new List<ProductInCart>();
             this.frmNhanVien_Load(sender, e);
 
         }
-        private void btnDangXuat_NV_Click(object sender, EventArgs e)
+   
+        private void txtCheckSdt_NV_TextChanged(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có thực sự muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (DialogResult.Yes.Equals(result))
-            {
-                frmDangNhap frm = new frmDangNhap();
-                frm.Closed += (s, args) => this.Close();
-                frm.Show();
-                this.Hide();
-            }
-            else
-            {
-                return;
-            }
-        }
-        private void dgvSanPham_NV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            selectedProduct(sender, e);
+
         }
 
-        private void dgvGioHang_NV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            viewDetailProduct(sender, e);
-        }
-
-        private void frmNhanVien_Load_1(object sender, EventArgs e)
+        private void frmNhanVien_Load(object sender, EventArgs e)
         {
             grbThongTinKhachHang_NV.Visible = false;
             grbChiTietSanPham_NV.Visible = false;
@@ -629,6 +590,22 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa
                 cboDanhMuc_NV.Items.Add(category.name);
             }
             cboDanhMuc_NV.SelectedIndex = 0;
+        }
+
+        private void btnDangXuat_NV_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có thực sự muốn đăng xuất không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (DialogResult.Yes.Equals(result))
+            {
+                frmDangNhap frm = new frmDangNhap();
+                frm.Closed += (s, args) => this.Close();
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

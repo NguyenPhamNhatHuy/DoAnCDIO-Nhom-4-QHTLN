@@ -85,11 +85,11 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnSanPham);
             this.panel4.Controls.Add(this.btnTaiKhoan);
             this.panel4.Controls.Add(this.btnNhaCungCap);
             this.panel4.Controls.Add(this.btnNhapKho);
             this.panel4.Controls.Add(this.btnDashBoard);
-            this.panel4.Controls.Add(this.btnSanPham);
             this.panel4.Controls.Add(this.btnHoaDon);
             this.panel4.Controls.Add(this.btnDanhMuc);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
@@ -171,7 +171,7 @@
             this.btnSanPham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSanPham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
-            this.btnSanPham.Location = new System.Drawing.Point(8, 71);
+            this.btnSanPham.Location = new System.Drawing.Point(9, 131);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.Size = new System.Drawing.Size(196, 45);
             this.btnSanPham.TabIndex = 30;
@@ -187,7 +187,7 @@
             this.btnHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnHoaDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnHoaDon.Location = new System.Drawing.Point(8, 131);
+            this.btnHoaDon.Location = new System.Drawing.Point(8, 193);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(196, 45);
             this.btnHoaDon.TabIndex = 31;
@@ -203,7 +203,7 @@
             this.btnDanhMuc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDanhMuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDanhMuc.ForeColor = System.Drawing.Color.White;
-            this.btnDanhMuc.Location = new System.Drawing.Point(8, 192);
+            this.btnDanhMuc.Location = new System.Drawing.Point(8, 69);
             this.btnDanhMuc.Name = "btnDanhMuc";
             this.btnDanhMuc.Size = new System.Drawing.Size(196, 45);
             this.btnDanhMuc.TabIndex = 33;

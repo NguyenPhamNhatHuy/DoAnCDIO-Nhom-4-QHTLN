@@ -190,13 +190,13 @@
             // 
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(394, 37);
+            this.label34.Location = new System.Drawing.Point(497, 16);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(610, 38);
+            this.label34.Size = new System.Drawing.Size(295, 39);
             this.label34.TabIndex = 132;
-            this.label34.Text = "DANH SÁCH MẶT HÀNG BÁN CHẠY";
+            this.label34.Text = "Mặt Hàng Bán Chạy";
             // 
             // tableLayoutPanel1
             // 
