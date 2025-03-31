@@ -67,18 +67,18 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
             try
             {
                 // Tải về tất cả dữ liệu cần thiết (thực thi các truy vấn Entity Framework)
-                var allOrders = MHBC.Orders.Where(o => o.createdAt.HasValue).ToList();
-                var allOrderDetails = MHBC.OrderDetails.ToList();
-                var allProducts = MHBC.Products.ToList();
-                var allCategories = MHBC.Categories.ToList();
+                var Orders = MHBC.Orders.Where(o => o.createdAt.HasValue).ToList();
+                var OrderDetails = MHBC.OrderDetails.ToList();
+                var Products = MHBC.Products.ToList();
+                var Categories = MHBC.Categories.ToList();
 
                 // Bây giờ xử lý dữ liệu bằng LINQ to Objects
-                var filteredOrders = allOrders;
+                var filteredOrders = Orders;
 
                 // Lọc theo tháng và năm nếu được chỉ định
                 if (month.HasValue && year.HasValue)
                 {
-                    filteredOrders = allOrders
+                    filteredOrders = Orders
                         .Where(o => o.createdAt.Value.Month == month.Value &&
                                o.createdAt.Value.Year == year.Value)
                         .ToList();
@@ -88,17 +88,17 @@ namespace Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe
                 var orderIds = filteredOrders.Select(o => o.orderID).ToList();
 
                 // Lấy chi tiết đơn hàng thuộc các đơn hàng đã lọc
-                var relevantOrderDetails = allOrderDetails
+                var relevantOrderDetails = OrderDetails
                     .Where(od => orderIds.Contains(od.orderID))
                     .ToList();
 
                 // Nhóm và tính toán số lượng bán cho mỗi sản phẩm
                 var bestSellingProducts = relevantOrderDetails
-                    .Join(allProducts,
+                    .Join(Products,
                         od => od.productID,
                         p => p.productID,
                         (od, p) => new { OrderDetail = od, Product = p })
-                    .Join(allCategories,
+                    .Join(Categories,
                         j => j.Product.categoryID,
                         c => c.categoryID,
                         (j, c) => new { j.OrderDetail, j.Product, Category = c })
