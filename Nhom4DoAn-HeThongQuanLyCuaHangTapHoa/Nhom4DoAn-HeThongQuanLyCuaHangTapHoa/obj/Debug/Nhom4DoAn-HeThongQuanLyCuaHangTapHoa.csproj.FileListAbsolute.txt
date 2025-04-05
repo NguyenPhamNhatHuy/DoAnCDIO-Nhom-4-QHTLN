@@ -98,3 +98,39 @@ D:\File Các Môn Học\Đồ Án CDIO2\LuuTruCode\Nhom4DoAn-HeThongQuanLyCuaHan
 D:\File Các Môn Học\Đồ Án CDIO2\LuuTruCode\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmMatHangSapHet.resources
 D:\File Các Môn Học\Đồ Án CDIO2\LuuTruCode\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmThongKe.resources
 D:\File Các Môn Học\Đồ Án CDIO2\LuuTruCode\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmBieuDo.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.exe.config
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.exe
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.pdb
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.dll
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\Guna.UI2.dll
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\itextsharp.dll
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.xml
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\bin\Debug\itextsharp.xml
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj.AssemblyReference.cache
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.frmCapNhatThongTinKH.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.frmDangNhap.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.frmMain.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.frmNhanVien.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon.frmChiTietHoaDon.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.HoaDon.frmQuanLyHoaDon.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.Properties.Resources.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy.frmQuanLyTaiKhoan.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy.frmQuanLyDanhMuc.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy.frmQuanLyNhaCungCap.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy.frmQuanLyNhapKho.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.QuanLy.frmQuanLySanPham.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmBieuDo.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmDoanhThu.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmMatHangBanChay.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmMatHangSapHet.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn_HeThongQuanLyCuaHangTapHoa.ThongKe.frmThongKe.resources
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj.GenerateResource.cache
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.csproj.CoreCompileInputs.cache
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoA.05DA34D3.Up2Date
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.exe
+C:\Users\huy78\OneDrive\Máy tính\DoAnCDIO-Nhom-4-QHTLN\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa\obj\Debug\Nhom4DoAn-HeThongQuanLyCuaHangTapHoa.pdb
